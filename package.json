@@ -1,0 +1,16 @@
+{
+  "name": "Boilerplate",
+  "version": "0.1.0",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-newer": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4"
+  }
+}
