@@ -1,0 +1,62 @@
+/**
+ * Email list
+ */
+body #conversation-list-rows {
+
+	background: #EAEAEA;
+
+	.conversation {
+
+		line-height: 55px;
+		height: 55px;
+		font-size: 12px;
+		letter-spacing: .8px;
+
+		.subject .pm_labels {
+			background: none;
+			float: none;
+			position: inherit;
+			top: 7px;
+
+			label {
+				background: none;
+				margin-left: .5rem;
+				box-shadow: none;
+				line-height: 20px;
+				height: 24px;
+				font-size: 11px;
+			}
+		}
+
+		.subject h4 {
+			line-height: 55px;
+			height: 55px;
+			font-weight: 400;
+			display: inline;
+		}
+
+		> * {
+			line-height: 50px;
+			height: 50px;
+		}
+
+		//box-shadow : inset 0 -1px 0 #DFDFDF;
+
+		&.read {
+			background: #F7F6F6;
+			color: #7F6D9B;
+			border-bottom: 1px solid #DEDDDD;
+
+			.subject h4 {
+				color: #7F6D9B;
+			}
+		}
+	}
+
+}
+
+
+.customMaskInput-mask {
+	border: 1px solid #C8C7C7;
+	border-radius: 4px;
+}

@@ -1,0 +1,142 @@
+/**
+ * Header
+ */
+
+header#pm_header-desktop {
+
+	// Topbar color
+	background: $color-header;
+	//border-bottom: 1px solid darken($color-header, 5%);
+
+	// Protonmail Logo
+	a.logo {
+
+		background: none;
+
+		// Smaller logo
+		img {
+			width: 110px;
+			margin-top: 8px;
+		}
+	}
+
+	// Topbar links
+	ul.navigation {
+
+		margin-right: 20px;
+
+		> li {
+			padding: 0 10px;
+			margin: 0px 3px;
+
+			// Account
+			&:last-child {
+				margin-left: 30px;
+				padding-right: 30px;
+
+				a {
+					color: #FFF;
+					opacity: .8;
+				}
+
+				&:after {
+
+					position: absolute;
+					right: 10px;
+					top: 23px;
+
+					display:block;
+					content: "\f107";
+
+					font: normal normal normal 14px/1 $font-icons;
+					color: #DED8E4;
+
+				}
+
+			}
+		}
+
+		// Active link
+		> li.active > a {
+			opacity: 1;
+		}
+
+		// Hover links
+		> li:not(.active):hover {
+
+			box-shadow: none;
+
+			a {
+				opacity: 1;
+			}
+		}
+
+
+		> li > a {
+
+			color: #FFF;
+			opacity: .5;
+
+			font-weight: 700;
+			letter-spacing: .8px;
+
+			padding: 0;
+			width: 100%;
+
+			transition: all .2s ease;
+
+			// Hide icons
+			> span .fa { display: none; }
+
+			// No uppercase
+			> strong {
+				text-transform: none;
+				text-align: center;
+				font-weight: 700;
+
+			}
+		}
+	}
+
+	// Search form
+	form.searchForm-container {
+
+		.search-form-fieldset {
+
+			background: none;
+			flex-direction: row-reverse;
+
+			button[type=button] {
+
+				float: right;
+
+				&:hover {
+					background: none;
+				}
+			}
+
+			button[type=submit] {
+				float: left;
+			}
+
+			// Hide "close advanced search"
+			#closeAdvSearch {
+				display: none;
+			}
+
+			.search-form-fieldset-input {
+				background: none;
+				font-size: 12px;
+				font-family: $font-default;
+				font-weight: 700;
+				letter-spacing: .8px;
+			}
+		}
+	}
+
+	#advancedSearchDropdown {
+		.pm_form .radio label {
+			margin-right: 0;
+		}
+	}
+}

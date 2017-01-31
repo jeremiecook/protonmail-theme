@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600');
 
 
 /**
  * Colors & fonts
  */
 
-$font-default: 'Montserrat', sans-serif;
-$color-header: #5b4280;
+$font-default: 'Raleway', sans-serif;
+$font-icons: 'FontAwesome';
 
+$color-header: linear-gradient(#5E4D86,#654080);
 
 /**
  * General
@@ -19,269 +20,27 @@ body {
 }
 
 // New font
-
-
 body, .pm_opensans {
 	font-family: $font-default;
 	font-size: 13px;
 	line-height: 1.6;
+	font-weight: 600;
 }
-
 
 
 
 /**
- * Header
+ * UI Parts
  */
 
-header#pm_header-desktop {
+@import 'parts/header';
+@import 'parts/sidebar';
+@import 'parts/toolbar';
+@import 'parts/list';
 
-	// Topbar color
-	background: $color-header;
-	border-bottom: 1px solid darken($color-header, 5%);
 
-	// Protonmail Logo
-	a.logo {
 
-		background: none;
 
-		// Smaller logo
-		img {
-			width: 110px;
-			margin-top: 8px;
-		}
-	}
 
-	// Topbar links
-	ul.navigation {
-
-		margin-right: 20px;
-
-		// Active link
-		> li.active > a {
-			opacity: 1;
-		}
-
-		// Hover links
-		> li:not(.active):hover {
-
-			box-shadow: none;
-
-			a {
-				opacity: 1;
-			}
-		}
-
-
-		> li > a {
-
-			color: #FFF;
-			opacity: .5;
-
-			padding: 0;
-			margin: 0 15px;
-
-			width: 100%;
-
-			transition: all .2s ease;
-
-			// Hide icons
-			> span .fa { display: none; }
-
-			// No uppercase
-			> strong {
-				text-transform: none;
-				text-align: left;
-			}
-		}
-	}
-
-	// Search form
-	form.searchForm {
-
-		fieldset {
-
-			background: none;
-
-			button[type=button] {
-
-				float: right;
-
-				&:hover {
-					background: none;
-				}
-			}
-
-			button[type=submit] {
-				float: left;
-			}
-
-			// Hide "close advanced search"
-			#closeAdvSearch {
-				display: none;
-			}
-
-			input.query {
-				background: none;
-				font-size: 13px;
-				font-family: $font-default;
-			}
-		}
-	}
-
-	#advancedSearchDropdown {
-		.pm_form .radio label {
-			margin-right: 0;
-		}
-	}
-}
-
-
-/**
- * Sidebar
- */
-
-
-body section.sidebar {
-
-	background: #F8F8F8;
-	padding-top: 20px;
-	box-shadow: 0 0 2px rgba(0,0,0,.2);
-
-	a.compose {
-		background: #CE4158;
-		transition: all .2s ease;
-
-		&:hover {
-			background: #B63045;
-		}
-	}
-
-	ul.menu {
-
-		&:before {
-			content: "Messages";
-			display: block;
-			margin: 20px 20px 0;
-			font-size: 12px;
-			color: #BABABA;
-		}
-
-		&#labelSettings:before {
-			content: "Labels";
-		}
-
-		li a {
-			color: #666;
-			font-size: 13px;
-			letter-spacing: .25px;
-			margin: 5px 0 0 5px;
-
-			i.fa {
-				color: #CBCBCB;
-				line-height: 28px;
-			}
-
-		}
-
-		li.active a, li a:hover {
-			color: #5B4280;
-			font-weight: 400;
-		}
-	}
-
-	div.labels ul li a {
-
-		color: #666;
-		font-size: 13px;
-		letter-spacing: .25px;
-		margin: 5px 0 0 5px;
-
-		&:hover {
-			color: #5B4280;
-		}
-
-		.fa-tag {
-			//display: none;
-		}
-	}
-}
-
-/**
- * Tools
- */
-
-#pm_toolbar-desktop {
-	background: #EEEAE6;
-	box-shadow: inset 0 -1px 0 #dbd8d3;
-}
-
-.pm_buttons {
-
-	border: 1px solid #d1cdca;
-
-	a {
-		background: #F8F7F6;
-	}
-}
-
-.pm_buttons .pm_buttons:not(:first-of-type), .pm_buttons > * {
-	border-left: 1px solid #d1cdca;
-}
-
-
-/**
- * Conversations
- */
-body #conversation-list-rows {
-
-	background: #EAEAEA;
-
-	.conversation {
-
-		line-height: 50px;
-		height: 50px;
-
-		.subject .pm_labels {
-			background: none;
-			float: none;
-			position: inherit;
-			top: 7px;
-
-			label {
-				background: none;
-				margin-left: .5rem;
-				box-shadow: none;
-				line-height: 20px;
-				height: 24px;
-				font-size: 11px;
-			}
-		}
-
-		.subject h4 {
-			line-height: 50px;
-			height: 50px;
-			font-weight: 400;
-			display: inline;
-		}
-
-		> * {
-			line-height: 50px;
-			height: 50px;
-		}
-
-		box-shadow : inset 0 -1px 0 #DFDFDF;
-
-		&.read {
-			background: #F0F0F0;
-			color: #7F6D9B;
-
-			.subject h4 {
-				color: #7F6D9B;
-			}
-		}
-	}
-
-}
 
 

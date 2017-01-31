@@ -1,0 +1,71 @@
+/**
+ * Sidebar
+ */
+
+
+body section.sidebar {
+
+	background: #FAF9F9;
+	padding-top: 20px;
+	box-shadow: 0 0 2px rgba(0,0,0,.2), -1px 0 0 #DDDCDB inset;
+	z-index: 1000;
+
+
+	a.compose {
+		background: #CE4158;
+		transition: all .2s ease;
+		font-weight: 700;
+
+		&:hover {
+			background: #B63045;
+		}
+	}
+
+	ul.menu {
+
+		&:before {
+			content: "Messages";
+			display: block;
+			margin: 20px 20px 0;
+			font-size: 12px;
+			color: #BABABA;
+		}
+
+		&#labelSettings:before {
+			content: "Labels";
+		}
+
+		li a {
+			color: #666;
+			font-size: 13px;
+			letter-spacing: .25px;
+			margin: 5px 0 0 5px;
+
+			i.fa {
+				color: #CBCBCB;
+				line-height: 28px;
+			}
+
+		}
+
+		li.active a, li a:hover {
+			color: #5B4280;
+		}
+	}
+
+	div.labels ul li a {
+
+		color: #666;
+		font-size: 13px;
+		letter-spacing: .25px;
+		margin: 5px 0 0 5px;
+
+		&:hover {
+			color: #5B4280;
+		}
+
+		.fa-tag {
+			//display: none;
+		}
+	}
+}
