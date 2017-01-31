@@ -1,22 +1,69 @@
 /**
  * Email list
  */
+
+.conversation {
+	height: 80;
+	font-size: 12px;
+	letter-spacing: .8px;
+	background: #FFF;
+	color: #6C4B9B;
+	border-bottom: 1px solid #DEDDDD;
+
+	.subject-text .ellipsis {
+		overflow: none;
+		width: 260px;
+		text-overflow: none;
+		white-space: wrap;
+		line-height: 18px;
+	}
+
+	.row {
+		.sender {
+			font-size: 12px;
+			text-overflow: ellipsis;
+			white-space: no-wrap;
+			width: 220px;
+		}
+
+		h4 {
+			font-size: 11px;
+			color: #A59DB0;
+
+			.subject-num-message {
+				display: none;
+			}
+		}
+	}
+
+		&.read {
+			background: #F7F6F6;
+			color: #7F6D9B;
+
+
+			.subject h4 {
+				color: #A59DB0;
+				font-weight: 700;
+				font-size: 11px;
+
+			}
+		}
+
+	.conversation-meta {
+		flex-direction: column-reverse;
+	}
+}
+
 body #conversation-list-rows {
 
 	background: #EAEAEA;
 
 	.conversation {
-
 		line-height: 55px;
 		height: 55px;
 		font-size: 12px;
-		letter-spacing: .8px;
-		background: #FFF;
-		color: #6C4B9B;
-		border-bottom: 1px solid #DEDDDD;
 
 		.subject .pm_labels {
-
 			background: none;
 			float: none;
 			position: inherit;
@@ -42,6 +89,7 @@ body #conversation-list-rows {
 			//display: block;
 			color: #6C4B9B;
 			margin-left: 10px;
+			font-size: 12px;
 		}
 
 
@@ -61,16 +109,7 @@ body #conversation-list-rows {
 
 		//box-shadow : inset 0 -1px 0 #DFDFDF;
 
-		&.read {
-			background: #F7F6F6;
-			color: #7F6D9B;
 
-
-			.subject h4 {
-				color: #7F6D9B;
-				font-weight: 700;
-			}
-		}
 	}
 
 }
