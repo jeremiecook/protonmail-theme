@@ -1,0 +1,53 @@
+/**
+ * Conversation
+ */
+
+// Hide message number
+#conversation-view header h1 {
+
+	padding: 35px 0;
+
+	span:first-child {
+		display: none;
+	}
+}
+
+// Email header background
+#conversation-view .message > div.details,
+#conversation-view .message > div.summary {
+	background: #FCFBFA;
+}
+#conversation-view .message > div.details {
+	border-bottom: 1px solid #EBEBE5;
+}
+
+
+#conversation-view .message .frame {
+	border-top: 0;
+}
+
+#conversation-view header {
+	border-bottom: 0;
+}
+
+#conversation-view .message {
+	margin: 0;
+	border: 0;
+	box-shadow: unset;
+}
+
+#conversation-view .message {
+	font-size: 13px;
+	line-height: 22px;
+	letter-spacing: .5px;
+	font-weight: 500;
+	border-top: 1px solid #EBEBE5;
+	border-bottom: 1px solid #EBEBE5;
+}
+
+#conversation-view .message > div.summary .labels,
+#conversation-view .message > div.summary .status,
+#conversation-view .message > div.summary .time,
+#conversation-view .message > div.summary .time::after {
+	background: none;
+}
