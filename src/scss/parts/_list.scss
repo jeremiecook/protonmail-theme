@@ -175,7 +175,7 @@
 
 body #conversation-list-rows {
 
-	background: #EAEAEA;
+	background: #F7F6F5;
 
 	.conversation {
 		line-height: 55px;
@@ -221,10 +221,12 @@ body #conversation-list-rows {
 
 		//box-shadow : inset 0 -1px 0 #DFDFDF;
 
-
 	}
-
 }
 
+
+body #conversation-list-columns {
+	border-right: none;
+}
 
 

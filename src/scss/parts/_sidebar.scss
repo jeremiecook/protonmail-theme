@@ -70,8 +70,14 @@ body section.sidebar {
 			color: #5B4280;
 		}
 
-		.fa-tag {
-			//display: none;
+		.fa-tag:before {
+			content: "\f10c";
 		}
 	}
+}
+
+
+body section.sidebar a.backToInbox {
+	color: $color-header;
+	border: 1px solid $color-header;
 }

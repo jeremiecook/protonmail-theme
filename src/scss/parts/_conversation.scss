@@ -51,3 +51,21 @@
 #conversation-view .message > div.summary .time::after {
 	background: none;
 }
+
+
+#conversation-view .message > div.summary .meta .contact span.from,
+#conversation-view .message > div.details .recipients-summary strong {
+	width: 30px;
+	text-align: right;
+	margin-right: 5px;
+	font-size: 12px;
+}
+
+
+.protonmail_signature_block {
+    opacity: .4;
+
+    &:hover {
+    	opacity: 1;
+    }
+}
