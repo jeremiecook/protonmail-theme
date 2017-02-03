@@ -8,7 +8,7 @@ body section.sidebar {
 	background: #FAF9F9;
 	padding-top: 20px;
 	box-shadow: 0 0 2px rgba(0,0,0,.1), -1px 0 0 #DDDCDB inset;
-	z-index: 1000;
+	z-index: 70;
 
 
 	a.compose {
@@ -25,6 +25,12 @@ body section.sidebar {
 
 	ul.menu {
 
+		&:hover {
+			li a {
+				color: #C4C4C4;
+			}
+		}
+
 		&:before {
 			content: "Messages";
 			display: block;
@@ -38,9 +44,10 @@ body section.sidebar {
 		}
 
 		li a {
+			transition: all .3s ease;
 			color: #666;
-			font-size: 13px;
-			letter-spacing: .25px;
+			font-size: 12px;
+			letter-spacing: .5px;
 			margin: 5px 0 0 5px;
 			font-weight: 600;
 
@@ -54,9 +61,14 @@ body section.sidebar {
 		}
 
 		li.active a, li a:hover {
-			color: #5B4280;
+			color: #634382;
 		}
 
+	}
+
+	// Hide "message" on setting screen
+	body section.sidebar .backToInbox + ul.menu::before {
+		display:none;
 	}
 
 	div.labels ul li a {
@@ -67,7 +79,7 @@ body section.sidebar {
 		margin: 5px 0 0 5px;
 
 		&:hover {
-			color: #5B4280;
+			color: #634382;
 		}
 
 		.fa-tag:before {

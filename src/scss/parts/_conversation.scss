@@ -2,14 +2,42 @@
  * Conversation
  */
 
+#conversation-view {
+	position: relative;
+	box-shadow : 0 0 2px rgba(0,0,0,.1), 1px 0 0 #DDDCDB inset;
+	z-index: 50;
+}
+
+body #pm_thread {
+	margin-left: 1px;
+}
+
+body #conversation-list-rows .conversation .subject h4 .subject-num-message {
+	display: none;
+}
+
+body #conversation-list-rows .conversation.read .subject h4 {
+	font-weight: 600;
+	color: #7F6D9B;
+}
+
+#conversation-view {
+	margin-left: -1px;
+}
+
 // Hide message number
 #conversation-view header h1 {
 
-	padding: 35px 0;
+	padding: 20px;
+	box-shadow: 0 0 2px rgba(0,0,0,.1), 0 -1px 0 #DDDCDB inset;
 
 	span:first-child {
 		display: none;
 	}
+}
+
+#conversation-view .message > div.summary .meta .contact strong, #nothingToSeeHere h3, body.mobileMode #conversation-view .message > div.summary .meta .contact strong {
+	font-weight: 700;
 }
 
 // Email header background
@@ -19,6 +47,20 @@
 }
 #conversation-view .message > div.details {
 	border-bottom: 1px solid #EBEBE5;
+}
+
+#conversation-view header {
+	padding: 0;
+}
+
+.history {
+	display: none;
+}
+
+
+
+#conversation-view .message .actions .pm_buttons:first-child {
+	display: none;
 }
 
 
@@ -41,7 +83,7 @@
 	line-height: 22px;
 	letter-spacing: .5px;
 	font-weight: 500;
-	border-top: 1px solid #EBEBE5;
+	//border-top: 1px solid #EBEBE5;
 	border-bottom: 1px solid #EBEBE5;
 }
 
@@ -52,20 +94,92 @@
 	background: none;
 }
 
+.ua-firefox #conversation-view .message > div.summary {
+		line-height: 50px;
+	height: 50px;
+}
+
+#conversation-view .message > div.summary {
+	line-height: 50px;
+	height: 50px;
+
+	.status .fa.fa-star-o, .status .fa.fa-star {
+		display: none;
+	}
+
+	#conversation-view .message > div.summary .status {
+		margin-left: 0;
+	}
+
+	.fa-lock {
+		opacity: .3;
+	}
+}
 
 #conversation-view .message > div.summary .meta .contact span.from,
 #conversation-view .message > div.details .recipients-summary strong {
-	width: 30px;
+	width: 26px;
 	text-align: right;
-	margin-right: 5px;
-	font-size: 12px;
+	font-size: 11px;
+	font-weight: 600px;
 }
 
 
+#conversation-view .message > div.details .recipients-summary {
+	font-size: 12px;
+font-weight: 700;
+letter-spacing: .5px;
+
+}
+
 .protonmail_signature_block {
     opacity: .4;
+    transition: all .5s ease;
 
     &:hover {
     	opacity: 1;
     }
+}
+
+/**
+ *
+ */
+
+#conversation-view header h1 .starButton a {
+	margin-top: 7px;
+	margin-rigth: 20px;
+	opacity: .5px;
+}
+
+
+#conversation-view .message > div.summary .contact {
+
+	letter-spacing: .5px;
+	strong {
+		font-weight: 600px;
+		font-size: 12px;
+	}
+
+	em {
+		font-style: normal;
+		font-size: 12px;
+		color: #ABAAAA;
+		margin-left: 2px;
+	}
+}
+
+/**
+ * Action row
+ */
+
+#conversation-view .message > div.details .action-row {
+	padding: 0;
+}
+
+#conversation-view .message .toggleDetails {
+	margin-left: 36px;
+}
+
+#conversation-view .message > div.details {
+	margin-top : -8px;
 }

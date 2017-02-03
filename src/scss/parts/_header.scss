@@ -2,103 +2,38 @@
  * Header
  */
 
-header#pm_header-desktop {
 
-	// Topbar color
+//
+// Général design
+//
+header#pm_header-desktop {
 	background: $color-header;
 	border-bottom: 1px solid darken($color-header, 5%);
+	z-index: 100;
+}
 
-	// Protonmail Logo
-	a.logo {
+
+//
+// Smaller Logo
+//
+header#pm_header-desktop {
+ 	a.logo {
 
 		background: none;
 
-		// Smaller logo
 		img {
 			width: 110px;
 			margin-top: 8px;
 		}
 	}
-
-	// Topbar links
-	ul.navigation {
-
-		margin-right: 20px;
-
-		> li {
-			padding: 0 10px;
-			margin: 0px 3px;
-
-			// Account
-			&:last-child {
-				margin-left: 30px;
-				padding-right: 30px;
-
-				a {
-					color: #FFF;
-					opacity: .8;
-				}
-
-				&:after {
-
-					position: absolute;
-					right: 10px;
-					top: 23px;
-
-					display:block;
-					content: "\f107";
-
-					font: normal normal normal 14px/1 $font-icons;
-					color: #DED8E4;
-
-				}
-
-			}
-		}
-
-		// Active link
-		> li.active > a {
-			opacity: 1;
-		}
-
-		// Hover links
-		> li:not(.active):hover {
-
-			box-shadow: none;
-
-			a {
-				opacity: 1;
-			}
-		}
+}
 
 
-		> li > a {
+//
+// Search form
+//
+header#pm_header-desktop {
 
-			color: #FFF;
-			opacity: .5;
-
-			font-weight: 700;
-			letter-spacing: .8px;
-
-			padding: 0;
-			width: 100%;
-
-			transition: all .2s ease;
-
-			// Hide icons
-			> span .fa { display: none; }
-
-			// No uppercase
-			> strong {
-				text-transform: none;
-				text-align: center;
-				font-weight: 700;
-
-			}
-		}
-	}
-
-	// Search form
 	form.searchForm-container {
 
 		.search-form-fieldset {
@@ -139,4 +74,100 @@ header#pm_header-desktop {
 			margin-right: 0;
 		}
 	}
+}
+
+
+
+//
+// Topbar links
+//
+header#pm_header-desktop ul.navigation {
+
+	margin-right: 20px;
+
+	> li {
+
+		padding: 0 10px;
+		margin: 0px 3px;
+
+		a {
+
+			color: #FFF;
+			opacity: .5;
+
+			font-weight: 700;
+			letter-spacing: .8px;
+
+			padding: 0;
+			width: 100%;
+
+			transition: all .2s ease;
+
+			// Hide icons
+			> span .fa { display: none; }
+
+			// No uppercase
+			> strong {
+				text-transform: none;
+				text-align: center;
+				font-weight: 700;
+
+			}
+		}
+
+		// Active link
+		&.active > a {
+			opacity: 1;
+		}
+
+		// Hover links
+		> li:not(.active):hover {
+
+			box-shadow: none;
+
+			a {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+
+//
+// Account link
+//
+header#pm_header-desktop ul.navigation {
+
+	> li {
+
+		&:last-child {
+			margin-left: 30px;
+			padding-right: 30px;
+
+			> a {
+				color: #FFF;
+				opacity: .8;
+				transition: all .3s ease;
+			}
+
+			&:after {
+
+				position: absolute;
+				right: 10px;
+				top: 23px;
+
+				display:block;
+				content: "\f107";
+
+				font: normal normal normal 14px/1 $font-icons;
+				color: #DED8E4;
+
+			}
+		}
+	}
+
+	.pm_trigger {
+		border-radius: 0;
+	}
+
 }

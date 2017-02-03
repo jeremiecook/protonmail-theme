@@ -1,11 +1,15 @@
-
 /**
- * Labels
+ * Emails list
  */
 
+
+//
+// Labels
+//
 .conversation .row {
 
 	.pm_labels {
+
 		position: relative;
 		font-size: 10px;
 		right: auto;
@@ -16,6 +20,9 @@
 		label {
 			background: none !important;
 			box-shadow: none;
+			height: 20px;
+			font-size: 11px;
+			padding: 0 .2rem;
 		}
 	}
 }
@@ -26,20 +33,25 @@
 
 
 
-/**
- * Checkboxes
- */
+//
+// Checkboxes
+//
 
 .customMaskInput-mask {
-	border: 1px solid #C8C7C7;
+	border: 1px solid #C8C7C7 !important;
 	border-radius: 4px;
 }
 
-// Position on "Dual" view"
-#pm_main:not(.row) {
-	.customMaskInput-container {
-		align-items: flex-start;
-		padding-top: 15px;
+
+.conversation {
+
+	#pm_main:not(.row) {
+
+		// Position on "Dual" view"
+		.customMaskInput-container {
+			align-items: flex-start;
+			padding-top: 15px;
+		}
 	}
 }
 
@@ -71,7 +83,7 @@
 		.meta {
 			//flex-direction: row-reverse;
 			position: absolute;
-			top: 5px;
+			top: 2px;
 			right: 10px;
 			display: block;
 
@@ -79,15 +91,16 @@
 
 		.senders {
 			font-size: 12px;
-			line-height: 23px;
+			line-height: 19px;
 			text-overflow: ellipsis;
 			white-space: nowrap;
-			max-width: calc(100% - 150px);
+			max-width: calc(100% - 80px);
 		}
 
 		h4 {
 			height: 34px;
 			overflow: hidden;
+			max-width: calc(100% - 33px) !important
 		}
 
 		h4 .subject-text {
@@ -106,6 +119,22 @@
 		}
 
 	}
+
+	&:hover {
+		background: #FCFBFA;
+		transition: all .5s ease;
+	}
+
+	&.active {
+		background: #FCFBFA;
+		box-shadow: 0 -1px 0 #DEDDDD, 0 0 4px rgba(126, 32, 118, 0.12);
+	}
+
+}
+
+
+.conversation.marked::before {
+   display: none
 }
 
 
@@ -146,13 +175,11 @@
 		height: auto;
 
 
-
 		h4 {
 			font-size: 11px;
 			color: #A59DB0;
 			line-height: 18px;
 			align-items: flex-start;
-			height: auto;
 			font-weight: 600 !important;
 
 			.subject-num-message {
@@ -171,6 +198,15 @@
 		flex-direction: column-reverse;
 		position: relative;
 	}
+}
+
+body #conversation-list-rows .conversation.read {
+	background: #F7F6F6;
+	color: #7F6D9B;
+}
+
+body #conversation-list-rows .conversation {
+	border-bottom: 1px solid #DEDDDD;
 }
 
 body #conversation-list-rows {
