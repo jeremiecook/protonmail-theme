@@ -2,7 +2,8 @@
  * Conversation
  */
 
-#conversation-view {
+
+#conversation-view, #pm_view {
 	position: relative;
 	box-shadow : 0 0 2px rgba(0,0,0,.1), 1px 0 0 #DDDCDB inset;
 	z-index: 50;
@@ -29,7 +30,7 @@ body #conversation-list-rows .conversation.read .subject h4 {
 #conversation-view header h1 {
 
 	padding: 20px;
-	box-shadow: 0 0 2px rgba(0,0,0,.1), 0 -1px 0 #DDDCDB inset;
+	box-shadow: 0 0 2px rgba(0,0,0,.1), 0 -1px 0 #EBEBE5 inset;
 
 	span:first-child {
 		display: none;
@@ -147,7 +148,7 @@ letter-spacing: .5px;
 
 #conversation-view header h1 .starButton a {
 	margin-top: 7px;
-	margin-rigth: 20px;
+	margin-right: 20px;
 	opacity: .5px;
 }
 

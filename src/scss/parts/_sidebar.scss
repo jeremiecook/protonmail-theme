@@ -25,19 +25,14 @@ body section.sidebar {
 
 	ul.menu {
 
-		&:hover {
-			li a {
-				color: #C4C4C4;
-			}
-		}
-
 		&:before {
-			content: "Messages";
 			display: block;
 			margin: 20px 20px 0;
 			font-size: 12px;
 			color: #BABABA;
 		}
+
+
 
 		&#labelSettings:before {
 			content: "Labels";
@@ -78,9 +73,10 @@ body section.sidebar {
 		letter-spacing: .25px;
 		margin: 5px 0 0 5px;
 
-		&:hover {
+		&:hover, &.active {
 			color: #634382;
 		}
+
 
 		.fa-tag:before {
 			content: "\f10c";
@@ -88,6 +84,10 @@ body section.sidebar {
 	}
 }
 
+// Only on the first screen
+.compose + &:before {
+	content: "Messages";
+}
 
 body section.sidebar a.backToInbox {
 	color: $color-header;

@@ -120,14 +120,16 @@
 
 	}
 
-	&:hover {
+	&:hover, &.read:hover {
 		background: #FCFBFA;
 		transition: all .5s ease;
 	}
 
-	&.active {
-		background: #FCFBFA;
-		box-shadow: 0 -1px 0 #DEDDDD, 0 0 4px rgba(126, 32, 118, 0.12);
+	&.active, &.read.active {
+		background: #FFF;
+		box-shadow: 0 -1px 0 #DEDDDD, 0 0 4px rgba(126, 32, 118, 0.12), 3px 0 0 #71A6F5 inset;
+		z-index: 1000;
+		transition: background .3s ease;
 	}
 
 }

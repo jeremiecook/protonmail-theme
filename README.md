@@ -21,9 +21,4 @@ You're done !
 
 ## Todo
 
-* Check z-index with dropdown menus
 * Review and optimize code
-
-## Changelog
-
-0.1 - First release

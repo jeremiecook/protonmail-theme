@@ -86,11 +86,11 @@ header#pm_header-desktop ul.navigation {
 	margin-right: 20px;
 
 	> li {
-
+		border-radius: 0;
 		padding: 0 10px;
 		margin: 0px 3px;
 
-		a {
+		> a {
 
 			color: #FFF;
 			opacity: .5;
