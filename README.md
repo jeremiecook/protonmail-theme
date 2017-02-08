@@ -24,6 +24,7 @@ Feedback is welcome !  You can contact me via [twitter](https://twitter.com/jere
 
 ## Todo
 
+* Clean up font weights
 * Review and optimize code
 
 

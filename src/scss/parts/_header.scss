@@ -171,3 +171,23 @@ header#pm_header-desktop ul.navigation {
 	}
 
 }
+
+//
+// Dropdown
+//
+html.protonmail .help {
+	font-style: normal;
+	background: #FFF !important;
+}
+
+#pm_header-desktop ul.navigation > li .pm_dropdown .user {
+	line-height: 1.6;
+
+	b {
+		color: #999;
+	}
+}
+
+.pm_dropdown > a, .pm_dropdown > button, .pm_dropdown > ul > li {
+	border-bottom: none;
+}

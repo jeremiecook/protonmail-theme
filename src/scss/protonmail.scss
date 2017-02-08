@@ -1,48 +1,47 @@
+
+// Note : To improve performances and prevent a Google request, you can install
+// Raleway font on your computer https://fonts.google.com/specimen/Raleway
+// and delete these line
 @import url('https://fonts.googleapis.com/css?family=Raleway:500,600');
 
 
-/**
- * Colors & fonts
- */
-
+//
+// Fonts
+//
 $font-default: 'Raleway', sans-serif;
 $font-icons: 'FontAwesome';
 
+//
+// Colors
+//
 $color-header: #634382;
 //linear-gradient(#5E4D86,#654080);
 
-/**
- * General
- */
 
+//
+// General
+//
 body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-// New font
 body, .pm_opensans {
 	font-family: $font-default;
 	font-size: 13px;
 	line-height: 1.6;
 	font-weight: 600;
+	letter-spacing: .5px;
 }
 
 
 
-/**
- * UI Parts
- */
+//
+// UI Parts
+//
 
 @import 'parts/header';
 @import 'parts/sidebar';
 @import 'parts/toolbar';
 @import 'parts/list';
 @import 'parts/conversation';
-
-
-
-
-
-
-

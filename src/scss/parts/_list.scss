@@ -18,12 +18,21 @@
 		font-weight: 700;
 
 		label {
-			background: none !important;
+
 			box-shadow: none;
 			height: 20px;
 			font-size: 11px;
 			padding: 0 .2rem;
 		}
+	}
+}
+
+.pm_labels {
+
+	background: none !important;
+
+	label {
+		background: none !important;
 	}
 }
 
@@ -36,31 +45,108 @@
 //
 // Checkboxes
 //
-
 .customMaskInput-mask {
 	border: 1px solid #C8C7C7 !important;
 	border-radius: 4px;
 }
 
 
+// Checked
 .conversation {
+	.customCheckbox-input:checked + .customCheckbox-mask {
 
-	#pm_main:not(.row) {
+		position: relative;
+		background: #FFF;
 
-		// Position on "Dual" view"
+		&:before{
+			position: absolute;
+			top: -1px;
+			left: 1px;
+			color: #6BCDBD;
+			content: "\f00c";
+			font-family: $font-icons;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 16px;
+		}
+	}
+}
+
+// Position on "Dual" view"
+.conversation {
 		.customMaskInput-container {
 			align-items: flex-start;
 			padding-top: 15px;
 		}
+}
+
+#conversation-list-rows .conversation {
+	.customMaskInput-container {
+		align-items: center;
+		padding-top: 0;
 	}
+}
+
+
+//
+// Emails statuses
+//
+.conversation {
+
+	transition: all .3s ease;
+
+	// Read
+	&.read {
+	 	background: #F7F6F6 !important;
+	 	color: #7F6D9B;
+	}
+
+	// Hover
+	&:hover, &.read:hover {
+		background: #FCFBFA !important;
+	}
+
+	// Active
+	&.active, &.read.active {
+		background: #FFF !important;
+		box-shadow: 0 -1px 0 #DEDDDD, 0 0 4px rgba(126, 32, 118, 0.12), 3px 0 0 #71A6F5 inset;
+		z-index: 1000;
+		transition: background .3s ease;
+	}
+
+	// Marked
+	&.marked, &.read.marked {
+		box-shadow: 3px 0 0 #71A6F5 inset;
+
+		&:before {
+			display: none;
+		}
+	}
+
+	// Selected
+	&.selected, &.read.selected {
+		background: #F9FDFC !important;
+		box-shadow: 3px 0 0 #6CCEBE inset;
+		color: #419588;
+
+		.row h4 {
+			color: #90C2B9;
+		}
+
+		body #conversation-list-rows & .subject h4 {
+			color: #419588;
+		}
+	}
+
+
 }
 
 
 
 
-/**
- * Elements position / Dual view
- */
+//
+// Elements position / Dual view
+//
 
 .conversation {
 
@@ -87,6 +173,10 @@
 			right: 10px;
 			display: block;
 
+			time.time {
+				margin-right: 5px;
+			}
+
 		}
 
 		.senders {
@@ -98,6 +188,7 @@
 		}
 
 		h4 {
+			transition: all .3s ease;
 			height: 34px;
 			overflow: hidden;
 			max-width: calc(100% - 33px) !important
@@ -113,30 +204,36 @@
 			float: right;
 		}
 
-		.starButton-star {
-			padding: 0 5px 0 10px;
-			margin: 0;
-		}
-
 	}
-
-	&:hover, &.read:hover {
-		background: #FCFBFA;
-		transition: all .5s ease;
-	}
-
-	&.active, &.read.active {
-		background: #FFF;
-		box-shadow: 0 -1px 0 #DEDDDD, 0 0 4px rgba(126, 32, 118, 0.12), 3px 0 0 #71A6F5 inset;
-		z-index: 1000;
-		transition: background .3s ease;
-	}
-
 }
 
 
-.conversation.marked::before {
-   display: none
+
+
+/**
+ * Stars
+ */
+.conversation {
+
+	.fa-star-o, .fa-star {
+		padding: 0 5px 0 2px;
+		margin: 0;
+
+		&:before {
+			font-size: 18px !important;
+		}
+	}
+
+	//.meta .fa-star, body #conversation-list-rows & .fa-star {
+	.fa-star {
+		color: #ffd338 !important;
+	}
+}
+
+body #conversation-list-rows .conversation {
+	.fa-star, .fa-star-o {
+		line-height: 55px;
+	}
 }
 
 
@@ -151,17 +248,6 @@
 	background: #FFF;
 	color: #6C4B9B;
 	border-bottom: 1px solid #DEDDDD;
-
-
-
-	.fa-star-o {
-		margin-top: 13px;
-		padding: 5px;
-
-		&:before {
-			font-size: 18px !important;
-		}
-	}
 
 
 	.subject-text .ellipsis {
@@ -190,10 +276,6 @@
 		}
 	}
 
-		&.read {
-			background: #F7F6F6;
-			color: #7F6D9B;
-		}
 
 
 	.conversation-meta {
@@ -202,10 +284,7 @@
 	}
 }
 
-body #conversation-list-rows .conversation.read {
-	background: #F7F6F6;
-	color: #7F6D9B;
-}
+
 
 body #conversation-list-rows .conversation {
 	border-bottom: 1px solid #DEDDDD;
@@ -220,6 +299,10 @@ body #conversation-list-rows {
 		height: 55px;
 		font-size: 12px;
 
+		.subject {
+			width: 80%;
+		}
+
 		.subject .pm_labels {
 			background: none;
 			float: none;
@@ -230,7 +313,7 @@ body #conversation-list-rows {
 				background: none;
 				margin-left: .5rem;
 				box-shadow: none;
-				line-height: 20px;
+				line-height: 25px;
 				height: 24px;
 				font-size: 11px;
 			}
@@ -247,6 +330,7 @@ body #conversation-list-rows {
 			color: #6C4B9B;
 			margin-left: 10px;
 			font-size: 12px;
+			float: left;
 		}
 
 
@@ -265,6 +349,7 @@ body #conversation-list-rows {
 
 body #conversation-list-columns {
 	border-right: none;
+	background: #F7F6F6;
 }
 
 

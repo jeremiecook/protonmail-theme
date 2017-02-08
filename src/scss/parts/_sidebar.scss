@@ -43,7 +43,7 @@ body section.sidebar {
 			color: #666;
 			font-size: 12px;
 			letter-spacing: .5px;
-			margin: 5px 0 0 5px;
+			margin: 3px 0 0 2px;
 			font-weight: 600;
 
 			i.fa {
@@ -51,6 +51,16 @@ body section.sidebar {
 				line-height: 28px;
 				font-size: 14px;
 				margin-right: 2px;
+			}
+
+			.fa-repeat {
+				color: #AFAFAF;
+			}
+
+			em {
+				letter-spacing: 1px;
+				color: #B1B1B1;
+				margin-left: 3px;
 			}
 
 		}
