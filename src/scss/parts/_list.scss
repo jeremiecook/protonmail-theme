@@ -101,6 +101,11 @@
 	&.read {
 	 	background: #F7F6F6 !important;
 	 	color: #7F6D9B;
+
+		// Active
+		&.active {
+			background: #F7F6F6 !important;
+		}
 	}
 
 	// Hover
@@ -109,8 +114,12 @@
 	}
 
 	// Active
-	&.active, &.read.active {
+	&.active {
 		background: #FFF !important;
+	}
+
+
+	&.active, &.read.active {
 		box-shadow: 0 -1px 0 #DEDDDD, 0 0 4px rgba(126, 32, 118, 0.12), 3px 0 0 #71A6F5 inset;
 		z-index: 1000;
 		transition: background .3s ease;

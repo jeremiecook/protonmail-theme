@@ -55,6 +55,12 @@ body section.sidebar {
 
 			.fa-repeat {
 				color: #AFAFAF;
+				transition: all .3s ease;
+
+				&:hover {
+					color: #AFAFAF;
+					transform: rotate(60deg);
+				}
 			}
 
 			em {
