@@ -7,9 +7,13 @@
 // Général design
 //
 header#pm_header-desktop {
-	background: $color-header;
-	border-bottom: 1px solid darken($color-header, 5%);
-	z-index: 100;
+ background: $color-header;
+ /* Rectangle: */
+ background-image: -webkit-linear-gradient(bottom, $color-header, #46477F);
+ background-image: -o-linear-gradient(bottom, $color-header, #46477F);
+ background-image: linear-gradient(to top, $color-header, #46477F);
+ border-bottom: 1px solid darken($color-header, 5%);
+ z-index: 100;
 }
 
 
