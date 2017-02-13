@@ -21,10 +21,30 @@ Feel free to use, share or tweak as you like. [Sketch file](https://github.com/j
 
 Feedback is welcome !  You can contact me via [twitter](https://twitter.com/jeremiecook) or [Dribbble](https://dribbble.com/shots/3248081-ProtonMail-Theme-Full-page)
 
+## Build
+
+Download: <https://github.com/jeremiecook/protonmail-theme.git>
+
+Go to the project:
+
+```bash
+cd path/to/files
+```
+
+Install node modules:
+
+```bash
+npm install
+```
+
+Run Gulp:
+
+```bash
+gulp watch
+```
+
 
 ## Todo
 
 * Clean up font weights
 * Review and optimize code
-
-
