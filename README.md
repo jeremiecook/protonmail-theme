@@ -48,3 +48,7 @@ gulp watch
 
 * Clean up font weights
 * Review and optimize code
+
+## Contributors
+
+- [Mat1th](https://github.com/mat1th)
