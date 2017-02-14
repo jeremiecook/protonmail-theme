@@ -121,7 +121,7 @@
 
 	&.active, &.read.active {
 		box-shadow: 0 -1px 0 #DEDDDD, 0 0 4px rgba(126, 32, 118, 0.12), 3px 0 0 #71A6F5 inset;
-		z-index: 1000;
+		z-index: 10;
 		transition: background .3s ease;
 	}
 
@@ -362,5 +362,3 @@ body #conversation-list-columns {
 	border-right: none;
 	background: #F7F6F6;
 }
-
-

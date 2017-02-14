@@ -7,11 +7,11 @@
 // Général design
 //
 header#pm_header-desktop {
-	background: $color-header;
-	border-bottom: 1px solid darken($color-header, 5%);
-	z-index: 100;
+ background: $color-header;
+ /* Rectangle: */
+ border-bottom: 1px solid darken($color-header, 5%);
+ z-index: 100;
 }
-
 
 //
 // Smaller Logo
