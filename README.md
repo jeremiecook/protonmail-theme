@@ -1,5 +1,7 @@
 # ProtonMail Theme
 
+*New* : Thème updated for Protonmail 3.7.1 - 22 feb 2017
+
 Here is a new theme for ProtonMail mail application !
 
 ![Alt text](/screenshot.png?raw=true "ProtonMail Theme")

@@ -11,7 +11,7 @@ body section.sidebar {
 	z-index: 70;
 
 
-	a.compose {
+	.pm_button.primary {
 		background: #CE4158;
 		transition: all .2s ease;
 		font-weight: 700;
@@ -106,7 +106,7 @@ body section.sidebar {
 	content: "Messages";
 }
 
-body section.sidebar a.backToInbox {
+.sidebarApp-container .sidebar-btn-back {
 	color: $color-header;
 	border: 1px solid $color-header;
 }

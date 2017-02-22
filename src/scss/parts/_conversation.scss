@@ -42,11 +42,11 @@ body #conversation-list-rows .conversation.read .subject h4 {
 }
 
 // Email header background
-#conversation-view .message > div.details,
+#conversation-view .message .details,
 #conversation-view .message > div.summary {
 	background: #FCFBFA;
 }
-#conversation-view .message > div.details {
+#conversation-view .message .details {
 	border-bottom: 1px solid #EBEBE5;
 }
 
@@ -118,7 +118,7 @@ body #conversation-list-rows .conversation.read .subject h4 {
 }
 
 #conversation-view .message > div.summary .meta .contact span.from,
-#conversation-view .message > div.details .recipients-summary strong {
+#conversation-view .message .details .recipients-summary strong {
 	width: 26px;
 	text-align: right;
 	font-size: 11px;
@@ -126,7 +126,7 @@ body #conversation-list-rows .conversation.read .subject h4 {
 }
 
 
-#conversation-view .message > div.details .recipients-summary {
+#conversation-view .message .details .recipients-summary {
 	font-size: 12px;
 font-weight: 700;
 letter-spacing: .5px;
@@ -173,7 +173,7 @@ letter-spacing: .5px;
  * Action row
  */
 
-#conversation-view .message > div.details .action-row {
+#conversation-view .message .details .action-row {
 	padding: 0;
 }
 
@@ -181,6 +181,6 @@ letter-spacing: .5px;
 	margin-left: 36px;
 }
 
-#conversation-view .message > div.details {
+#conversation-view .message .details {
 	margin-top : -8px;
 }

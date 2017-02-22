@@ -6,18 +6,18 @@
 //
 // Général design
 //
-header#pm_header-desktop {
- background: $color-header;
- /* Rectangle: */
- border-bottom: 1px solid darken($color-header, 5%);
- z-index: 100;
+.headerDesktop-container {
+	background: $color-header;
+	/* Rectangle: */
+	border-bottom: 1px solid darken($color-header, 5%);
+	z-index: 100;
 }
 
 //
 // Smaller Logo
 //
-header#pm_header-desktop {
- 	a.logo {
+.headerDesktop-container {
+ 	.headerDesktop-logo {
 
 		background: none;
 
@@ -32,7 +32,7 @@ header#pm_header-desktop {
 //
 // Search form
 //
-header#pm_header-desktop {
+.headerDesktop-container {
 
 	form.searchForm-container {
 
@@ -81,7 +81,7 @@ header#pm_header-desktop {
 //
 // Topbar links
 //
-header#pm_header-desktop ul.navigation {
+.headerDesktop-container ul.navigation {
 
 	margin-right: 20px;
 
@@ -90,7 +90,7 @@ header#pm_header-desktop ul.navigation {
 		padding: 0 10px;
 		margin: 0px 3px;
 
-		> a {
+		.navigation-link {
 
 			color: #FFF;
 			opacity: .5;
@@ -105,18 +105,10 @@ header#pm_header-desktop ul.navigation {
 
 			// Hide icons
 			> span .fa { display: none; }
-
-			// No uppercase
-			> strong {
-				text-transform: none;
-				text-align: center;
-				font-weight: 700;
-
-			}
 		}
 
 		// Active link
-		&.active > a {
+		&.active .navigation-link {
 			opacity: 1;
 		}
 
@@ -130,13 +122,28 @@ header#pm_header-desktop ul.navigation {
 			}
 		}
 	}
+
+	// No uppercase
+	.navigation-title {
+		text-transform: none;
+		text-align: center;
+		font-weight: 700;
+		font-height: 60px;
+		height: 60px;
+	}
+
+	.navigation-icon {
+		display: none;
+	}
+
+
 }
 
 
 //
 // Account link
 //
-header#pm_header-desktop ul.navigation {
+.headerDesktop-container ul.navigation {
 
 	> li {
 
