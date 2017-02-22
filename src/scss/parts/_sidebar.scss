@@ -22,6 +22,10 @@ body section.sidebar {
 			margin-left: -5px;
 		}
 
+		i {
+			display: none;
+		}
+
 		&:hover {
 			background: #B63045;
    			border-color: darken(#B63045, 5%);
