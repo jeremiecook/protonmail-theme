@@ -2,7 +2,6 @@
  * Sidebar
  */
 
-
 body section.sidebar {
 
 	background: #FAF9F9;
@@ -13,14 +12,28 @@ body section.sidebar {
 
 	.pm_button.primary {
 		background: #CE4158;
-		transition: all .2s ease;
+		transition: all .3s ease;
 		font-weight: 700;
 		text-align: left;
-		padding-left: 20px;
+		padding-left: 15px;
+		border-color: darken(#CE4158, 5%);
+
+		span {
+			margin-left: -5px;
+		}
 
 		&:hover {
 			background: #B63045;
-   border-color: darken(#B63045, 5%);
+   			border-color: darken(#B63045, 5%);
+		}
+
+		&:before {
+			font-family: $font-icons;
+			content: "\f0e0";
+			float: left;
+			font-size: 15px;
+			font-weight: 400;
+			color: #FAEBEE;
 		}
 	}
 

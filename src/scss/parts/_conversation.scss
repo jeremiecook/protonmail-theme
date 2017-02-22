@@ -28,13 +28,8 @@ body #conversation-list-rows .conversation.read .subject h4 {
 
 // Hide message number
 #conversation-view header h1 {
-
 	padding: 20px;
 	box-shadow: 0 0 2px rgba(0,0,0,.1), 0 -1px 0 #EBEBE5 inset;
-
-	span:first-child {
-		display: none;
-	}
 }
 
 #conversation-view .message > div.summary .meta .contact strong, #nothingToSeeHere h3, body.mobileMode #conversation-view .message > div.summary .meta .contact strong {

@@ -2,7 +2,6 @@
  * Header
  */
 
-
 //
 // Général design
 //
@@ -128,11 +127,11 @@
 		text-transform: none;
 		text-align: center;
 		font-weight: 700;
-		font-height: 60px;
+		line-height: 60px;
 		height: 60px;
 	}
 
-	.navigation-icon {
+	.navigation-icons, .navigation-icon{
 		display: none;
 	}
 
