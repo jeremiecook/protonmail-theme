@@ -2,15 +2,16 @@
  * Sidebar
  */
 
-body section.sidebar {
+//body section.sidebar {
+.sidebarApp-container {
 
 	background: #FAF9F9;
 	padding-top: 20px;
 	box-shadow: 0 0 2px rgba(0,0,0,.1), -1px 0 0 #DDDCDB inset;
 	z-index: 70;
 
+	.sidebar-btn-compose {
 
-	.pm_button.primary {
 		background: #CE4158;
 		transition: all .3s ease;
 		font-weight: 700;
@@ -22,7 +23,7 @@ body section.sidebar {
 			margin-left: -5px;
 		}
 
-		i {
+		.fa {
 			display: none;
 		}
 
@@ -43,18 +44,16 @@ body section.sidebar {
 
 	ul.menu {
 
-		&:before {
+		&:before, .sidebarApp-label {
 			display: block;
 			margin: 20px 20px 0;
 			font-size: 12px;
 			color: #BABABA;
 		}
 
-
-
-		&#labelSettings:before {
-			content: "Labels";
-		}
+		//&#labelSettings:before {
+		//	content: "Labels";
+		//}
 
 		li a {
 			transition: all .3s ease;
@@ -103,7 +102,7 @@ body section.sidebar {
 	div.labels ul li a {
 
 		color: #666;
-		font-size: 13px;
+		font-size: 12px;
 		letter-spacing: .25px;
 		margin: 5px 0 0 5px;
 

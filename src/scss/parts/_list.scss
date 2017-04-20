@@ -27,6 +27,13 @@
 	}
 }
 
+
+// Labels height position
+.pm_labels [class*="-label"] {
+	line-height: 22px;
+}
+
+
 .pm_labels {
 
 	background: none !important;
@@ -116,6 +123,7 @@
 	// Active
 	&.active {
 		background: #FFF !important;
+		border-bottom: 1px solid #DEDDDD;
 	}
 
 
