@@ -115,6 +115,10 @@
 			content: "\f10c";
 		}
 	}
+
+	.version {
+		color: inherit;
+	}
 }
 
 // Only on the first screen
@@ -125,4 +129,8 @@
 .sidebarApp-container .sidebar-btn-back {
 	color: $color-header;
 	border: 1px solid $color-header;
+}
+
+#tour-label-settings {
+    margin: 0
 }
