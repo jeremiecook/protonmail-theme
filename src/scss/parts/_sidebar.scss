@@ -120,6 +120,10 @@
 	.version {
 		color: inherit;
 	}
+
+	.menuLabel-item.active .menuLabel-title {
+		color: #634382;
+	}
 }
 
 // Only on the first screen
