@@ -16,7 +16,8 @@
 		transition: all .3s ease;
 		font-weight: 700;
 		text-align: left;
-		padding-left: 15px;
+		text-indent: 5px;
+		padding-left: 7px;
 		border-color: darken(#CE4158, 5%);
 
 		span {
@@ -118,6 +119,10 @@
 
 	.version {
 		color: inherit;
+	}
+
+	.menuLabel-item.active .menuLabel-title {
+		color: #634382;
 	}
 }
 
