@@ -16,6 +16,14 @@ $font-icons: 'FontAwesome';
 // Colors
 //
 $color-header: #634382;
+
+$color-primary-d1: #00436E;
+$color-primary: #005288;
+$color-primary-l1: #005A95;
+$color-primary-l2: #2F719C;
+$color-primary-l3: #4099D4;
+
+$gradient-header: linear-gradient($color-primary 50%, $color-primary-l1, $color-primary-l2);
 //linear-gradient(#5E4D86,#654080);
 
 
@@ -27,6 +35,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+body #wrapper { z-index: 2; }
 
 body,
 .pm_opensans {
@@ -36,6 +45,17 @@ body,
 	font-weight: 600;
 	letter-spacing: .5px;
 }
+
+.pm_button.primary {
+    background-color: $color-primary-l1;
+    border-color: $color-primary-l1;
+    color: #fff;
+}
+.pm_button.primary:focus, .pm_button.primary:hover {
+    background-color: #00436E;
+    border-color: transparent;
+}
+
 
 
 //
@@ -48,3 +68,4 @@ body,
 @import 'parts/message';
 @import 'parts/list';
 @import 'parts/conversation';
+@import 'parts/buttonsAndLinks';

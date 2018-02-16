@@ -6,9 +6,9 @@
 // Général design
 //
 .headerDesktop-container {
-	background: $color-header;
+	background: $gradient-header;
 	/* Rectangle: */
-	border-bottom: 1px solid darken($color-header, 5%);
+	//border-bottom: 1px solid darken($color-header, 5%);
 	z-index: 100;
 }
 
@@ -92,7 +92,7 @@
 		.navigation-link {
 
 			color: #FFF;
-			opacity: .5;
+			opacity: .7;
 
 			font-weight: 700;
 			letter-spacing: .8px;
@@ -119,6 +119,14 @@
 			a {
 				opacity: 1;
 			}
+		}
+	}
+
+	>li.active, li:hover {
+		-webkit-box-shadow: 0 5px 0 0 $color-primary-l3 inset;
+	    box-shadow: inset 0 5px 0 0 $color-primary-l3;
+		> a {
+			opacity: 1;
 		}
 	}
 
@@ -152,7 +160,6 @@
 
 			> a {
 				color: #FFF;
-				opacity: .8;
 				transition: all .3s ease;
 			}
 

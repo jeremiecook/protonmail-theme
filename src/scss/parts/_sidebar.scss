@@ -15,9 +15,7 @@
 		background: #CE4158;
 		transition: all .3s ease;
 		font-weight: 700;
-		text-align: left;
-		text-indent: 5px;
-		padding-left: 7px;
+		text-align: center;
 		border-color: darken(#CE4158, 5%);
 
 		span {
@@ -32,22 +30,13 @@
 			background: #B63045;
    			border-color: darken(#B63045, 5%);
 		}
-
-		&:before {
-			font-family: $font-icons;
-			content: "\f0e0";
-			float: left;
-			font-size: 15px;
-			font-weight: 400;
-			color: #FAEBEE;
-		}
 	}
 
 	ul.menu {
 
 		&:before, .sidebarApp-label {
 			display: block;
-			margin: 20px 20px 0;
+			margin: 10px 20px 0;
 			font-size: 12px;
 			color: #BABABA;
 		}
@@ -90,7 +79,7 @@
 		}
 
 		li.active a, li a:hover {
-			color: #634382;
+			color: $color-primary;
 		}
 
 	}
@@ -108,7 +97,7 @@
 		margin: 5px 0 0 5px;
 
 		&:hover, &.active {
-			color: #634382;
+			color: $color-primary;
 		}
 
 
@@ -122,18 +111,18 @@
 	}
 
 	.menuLabel-item.active .menuLabel-title {
-		color: #634382;
+		color: $color-primary;
 	}
 }
 
 // Only on the first screen
-.compose + &:before {
+.compose + :before {
 	content: "Messages";
 }
 
 .sidebarApp-container .sidebar-btn-back {
-	color: $color-header;
-	border: 1px solid $color-header;
+	color: $color-primary;
+	border: 1px solid $color-primary;
 }
 
 #tour-label-settings {

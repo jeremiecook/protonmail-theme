@@ -1,0 +1,38 @@
+.pm_toggle.on .on {
+  background-color: $color-primary-l1;
+  border-radius: 2rem;
+  color: #fff;
+}
+
+.pm_dropdown .navigationUser-logout:hover {
+  background: $color-primary-d1 !important;
+  color: #fff !important;
+}
+
+.customRadio-input:checked + .customRadio-mask {
+  -webkit-box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 10px $color-primary-l1;
+  box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 10px $color-primary-l1;
+  border-color: $color-primary-l1;
+}
+
+.pm_button.link {
+  color: $color-primary;
+}
+
+.sidebarApp-container .footer div {
+  &.link a, &.storage strong {
+    color: $color-primary-l1;
+  }
+  &.link a:hover {
+    color: $color-primary-d1;
+  }
+}
+
+.storageBar .storageBar-progress {
+  background-color: $color-primary-l1;
+}
+
+.sidebarApp-container .footer .storageBar {
+  width: 90%;
+  background-color: rgba(64, 153, 212, 0.3);
+}

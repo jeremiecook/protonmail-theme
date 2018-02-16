@@ -107,20 +107,23 @@
 	// Read
 	&.read {
 	 	background: #F7F6F6 !important;
-	 	color: #7F6D9B;
+	 	color: $color-primary-l1;
 
 		// Active
 		&.active {
-			background: #F7F6F6 !important;
+			background: #FFF !important;
 		}
 	}
 
 	// Hover
-	&:hover, &.read:hover {
+	&.read:hover {
 		background: #FCFBFA !important;
 	}
+	&:hover {
+		background: #F3F7FA;
+	}
 
-	// Active
+		// Active
 	&.active {
 		background: #FFF !important;
 		border-bottom: 1px solid #DEDDDD;
@@ -128,14 +131,14 @@
 
 
 	&.active, &.read.active {
-		box-shadow: 0 -1px 0 #DEDDDD, 0 0 4px rgba(126, 32, 118, 0.12), 3px 0 0 #71A6F5 inset;
+		box-shadow: 0 -1px 0 #DEDDDD, 0 0 4px rgba(126, 32, 118, 0.12), 3px 0 0 $color-primary-l3 inset;
 		z-index: 10;
 		transition: background .3s ease;
 	}
 
 	// Marked
 	&.marked, &.read.marked {
-		box-shadow: 3px 0 0 #71A6F5 inset;
+		box-shadow: 3px 0 0 $color-primary-l3 inset;
 
 		&:before {
 			display: none;
@@ -215,7 +218,7 @@
 
 		h4 .subject-text {
 			padding: 0;
-			white-space: normal;
+			white-space: nowrap;
 			overflow: hidden;
 		}
 
@@ -261,11 +264,10 @@ body #conversation-list-rows .conversation {
  */
 .conversation {
 
-	height: 90px;
 	font-size: 12px;
 	letter-spacing: .8px;
-	background: #FFF;
-	color: #6C4B9B;
+	background: #eaf4fa;
+	color: $color-primary-d1;
 	border-bottom: 1px solid #DEDDDD;
 
 
@@ -300,6 +302,7 @@ body #conversation-list-rows .conversation {
 	.conversation-meta {
 		flex-direction: column-reverse;
 		position: relative;
+		top: 15px;
 	}
 }
 
@@ -346,7 +349,7 @@ body #conversation-list-rows {
 			line-height: 55px;
 			height: 55px;
 			//display: block;
-			color: #6C4B9B;
+			color: $color-primary-d1;
 			margin-left: 10px;
 			font-size: 12px;
 			float: left;
