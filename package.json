@@ -1,16 +1,31 @@
 {
-  "name": "Boilerplate",
-  "version": "0.1.0",
-  "main": "Gruntfile.js",
-  "devDependencies": {
-    "autoprefixer": "^6.3.6",
-    "gulp": "~3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-livereload": "^3.8.1",
-    "gulp-newer": "^1.1.0",
-    "gulp-postcss": "^6.1.1",
-    "gulp-sass": "^2.3.1",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.4"
+  "name": "protonmail-theme",
+  "version": "1.0.0",
+  "description": "Protonmail Theme 4.0 - 1 feb 2020",
+  "main": "package.json",
+  "scripts": {
+    "build-task:scss-compile": "node-sass-chokidar src/scss/ -o dist/css",
+    "build-task:autoprefixer": "postcss dist/css/*.css --use autoprefixer -d dist/css",
+    "sass:build": "npm-run-all -p build-task:*",
+    "sass:watch": "chokidar 'src/scss/**/*.scss' -c 'npm run sass:build'",
+    "dev": "npm-run-all -p sass:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremiecook/protonmail-theme.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremiecook/protonmail-theme/issues"
+  },
+  "homepage": "https://github.com/jeremiecook/protonmail-theme#readme",
+  "dependencies": {
+    "autoprefixer": "^9.7.4",
+    "chokidar-cli": "^2.1.0",
+    "node-sass-chokidar": "^1.4.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
   }
 }
