@@ -2,35 +2,29 @@
  * Toolbar
  */
 
-#pm_toolbar-desktop {
-	background: #F4F2F2;
-	box-shadow: inset 0 -1px 0 #dbd8d3;
-	z-index: 60;
+ .toolbar {
+	color: #262a33;
+	//border-bottom: 1px solid #DAD9D9;
+	box-shadow: 3px -1px 2px -2px #bfbfbf inset;
+	border-radius: 0;
 }
 
-.pm_buttons {
+.pm-button.toolbar-button:hover, .toolbar-button.pm-button--info:hover, .toolbar-button.pm-button--redborder:hover, .toolbar-button:hover {
+	background: #e7e5e4; 
+}
 
-	border: 1px solid #d1cdca;
-	border-radius: 4px;
+.pm-select-all .pm-checkbox-fakecheck {
+	background-color: #FFF;
+	border-color: #878c95;
+}
 
-	a {
-		background: #FBFAFA;
-		box-shadow: none;
-		color: #7C7B7B;
-		border-radius: 0 4px 4px 0;
-	}
-
-	& > :first-child {
-		border-radius: 4px;
-	}
+.toolbar-separator {
+	width: 2px;
+	opacity: .8;
+	background-image: linear-gradient(90deg, #DDD 1px,#FFF 0);
 
 }
 
-.pm_buttons .pm_buttons:not(:first-of-type), .pm_buttons > * {
-	border-left: 1px solid #d1cdca;
-}
-
-.chooseLayoutBtns-container-rows .chooseLayoutBtns-btn-rows,
-.chooseLayoutBtns-container:not(.chooseLayoutBtns-container-rows) .chooseLayoutBtns-btn-column {
-	box-shadow: inset 0 1px 1px 0 rgba(0,0,0,.15);
+.pm-group-buttons > .pm-group-button:last-child {
+	border-radius: 0;
 }

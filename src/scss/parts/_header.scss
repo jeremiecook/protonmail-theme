@@ -2,198 +2,48 @@
  * Header
  */
 
-//
-// Général design
-//
-.headerDesktop-container {
-	background: $color-header;
-	/* Rectangle: */
-	border-bottom: 1px solid darken($color-header, 5%);
-	z-index: 100;
-}
-
-//
-// Smaller Logo
-//
-.headerDesktop-container {
- 	.headerDesktop-logo {
-
-		background: none;
-
-		img {
-			width: 110px;
-			margin-top: 8px;
-		}
-	}
-}
+ .logo {transform: scale(0.75);}
 
 
-//
-// Search form
-//
-.headerDesktop-container {
 
-	form.searchForm-container {
+ .header {
+	//background: var(--header-color, #654080);
+	background: linear-gradient(125deg, #6B3ABB, #C559A3, #F7B9A4);
+	//background: linear-gradient(125deg, #6B3ABB, #DD619C, #FFAEB4);
+	border-bottom: 1px solid #FDFDFD;
+	height: 7rem;
 
-		.search-form-fieldset {
-
-			background: none;
-			flex-direction: row-reverse;
-
-			button[type=button] {
-
-				float: right;
-
-				&:hover {
-					background: none;
-				}
-			}
-
-			button[type=submit] {
-				float: left;
-			}
-
-			// Hide "close advanced search"
-			#closeAdvSearch {
-				display: none;
-			}
-
-			.search-form-fieldset-input {
-				background: none;
-				font-size: 12px;
-				font-family: $font-default;
-				font-weight: 700;
-				letter-spacing: .8px;
-			}
-		}
+	.searchbox-search-button > .searchbox-search-button-icon {
+		fill: #FFF;
 	}
 
-	#advancedSearchDropdown {
-		.pm_form .radio label {
-			margin-right: 0;
-		}
-	}
-}
-
-
-
-//
-// Topbar links
-//
-.headerDesktop-container ul.navigation {
-
-	margin-right: 20px;
-
-	> li {
-		border-radius: 0;
-		padding: 0 10px;
-		margin: 0px 3px;
-
-		.navigation-link {
-
-			color: #FFF;
-			opacity: .5;
-
-			font-weight: 700;
-			letter-spacing: .8px;
-
-			padding: 0;
-			width: 100%;
-
-			transition: all .2s ease;
-
-			// Hide icons
-			> span .fa { display: none; }
-		}
-
-		// Active link
-		&.active .navigation-link {
-			opacity: 1;
-		}
-
-		// Hover links
-		> li:not(.active):hover {
-
-			box-shadow: none;
-
-			a {
-				opacity: 1;
-			}
-		}
+	.searchbox-field[type="search"] {
+		background-color: var(--bgcolor-searchbox-field,rgba(0,0,0,.3));
 	}
 
-	// No uppercase
-	.navigation-title {
-		text-transform: none;
-		text-align: center;
-		font-weight: 700;
-		line-height: 60px;
-		height: 60px;
-	}
-
-	.navigation-icons, .navigation-icon{
-		display: none;
+	.topnav-link {
+		color: rgba(255,255,255,.7);
 	}
 
 
-}
-
-
-//
-// Account link
-//
-.headerDesktop-container ul.navigation {
-
-	> li {
-
-		&:last-child {
-			margin-left: 30px;
-			padding-right: 30px;
-
-			> a {
-				color: #FFF;
-				opacity: .8;
-				transition: all .3s ease;
-			}
-
-			&:after {
-
-				position: absolute;
-				right: 10px;
-				top: 23px;
-
-				display:block;
-				content: "\f107";
-
-				font: normal normal normal 14px/1 $font-icons;
-				color: #DED8E4;
-
-			}
-		}
+	.topnav-link[aria-current="true"] {
+		color: #FFF;
 	}
 
-	.pm_trigger {
-		border-radius: 0;
+
+	.topnav-link[aria-current="true"] > .topnav-icon {
+		color:rgba(255,255,255,.7);
 	}
 
-}
-
-//
-// Dropdown
-//
-html.protonmail .help {
-	font-style: normal;
-	background: #FFF !important;
-}
-
-#pm_header-desktop ul.navigation > li .pm_dropdown .user {
-	line-height: 1.6;
-
-	b {
-		color: #999;
+	.navigationUser-button {
+		color: #792c64;
 	}
-}
 
-.pm_dropdown > a, .pm_dropdown > button, .pm_dropdown > ul > li {
-	border-bottom: none;
+	.dropDown-logout-email {
+		opacity: .6;
+	}
+
+	.dropDown-logout-initials {
+		border-color: #792c64;
+	}
 }

@@ -2,140 +2,75 @@
  * Sidebar
  */
 
-//body section.sidebar {
-.sidebarApp-container {
+ 
+.sidebar {
 
-	background: #FAF9F9;
-	padding-top: 20px;
-	box-shadow: 0 0 2px rgba(0,0,0,.1), -1px 0 0 #DDDCDB inset;
-	z-index: 70;
-
-	.sidebar-btn-compose {
-
-		background: #CE4158;
-		transition: all .3s ease;
-		font-weight: 700;
-		text-align: left;
-		text-indent: 5px;
-		padding-left: 7px;
-		border-color: darken(#CE4158, 5%);
-
-		span {
-			margin-left: -5px;
-		}
-
-		.fa {
-			display: none;
-		}
-
+	.pm-button--large {
+		background: #f04882;
+		border-color: #f04882;
+		margin-top: 2rem;
+   
 		&:hover {
-			background: #B63045;
-   			border-color: darken(#B63045, 5%);
-		}
-
-		&:before {
-			font-family: $font-icons;
-			content: "\f0e0";
-			float: left;
-			font-size: 15px;
-			font-weight: 400;
-			color: #FAEBEE;
+		   background: #d5346c; 
 		}
 	}
-
-	ul.menu {
-
-		&:before, .sidebarApp-label {
-			display: block;
-			margin: 20px 20px 0;
-			font-size: 12px;
-			color: #BABABA;
-		}
-
-		//&#labelSettings:before {
-		//	content: "Labels";
-		//}
-
-		li a {
-			transition: all .3s ease;
-			color: #666;
-			font-size: 12px;
-			letter-spacing: .5px;
-			margin: 3px 0 0 2px;
-			font-weight: 600;
-
-			i.fa {
-				color: #CCC;
-				line-height: 28px;
-				font-size: 14px;
-				margin-right: 2px;
-			}
-
-			.fa-repeat {
-				color: #AFAFAF;
-				transition: all .3s ease;
-
-				&:hover {
-					color: #AFAFAF;
-					transform: rotate(60deg);
-				}
-			}
-
-			em {
-				letter-spacing: 1px;
-				color: #B1B1B1;
-				margin-left: 3px;
-			}
-
-		}
-
-		li.active a, li a:hover {
-			color: #634382;
-		}
-
-	}
-
-	// Hide "message" on setting screen
-	body section.sidebar .backToInbox + ul.menu::before {
-		display:none;
-	}
-
-	div.labels ul li a {
-
-		color: #666;
-		font-size: 12px;
-		letter-spacing: .25px;
-		margin: 5px 0 0 5px;
-
-		&:hover, &.active {
-			color: #634382;
-		}
-
-
-		.fa-tag:before {
-			content: "\f10c";
-		}
-	}
-
-	.version {
-		color: inherit;
-	}
-
-	.menuLabel-item.active .menuLabel-title {
-		color: #634382;
-	}
-}
-
-// Only on the first screen
-.compose + &:before {
-	content: "Messages";
-}
-
-.sidebarApp-container .sidebar-btn-back {
-	color: $color-header;
-	border: 1px solid $color-header;
-}
-
-#tour-label-settings {
-    margin: 0
-}
+   
+   }
+   
+   // Clean menu items
+   // To always show one item, comment the two corresponding lines
+   
+   .navigation__link:hover, .navigation__link.ptdnd-drag-hover {
+	   background: #e7e5e4;
+   }
+   
+   .sidebarApp-item[data-key="drafts"],
+   .sidebarApp-item[data-key="sent"],
+   .sidebarApp-item[data-key="trash"],
+   .sidebarApp-item[data-key="spam"],
+   .sidebarApp-item[data-key="allmail"],
+	{
+	   
+	   .navigation__link:not([aria-content="page"]) {
+	   opacity: 0;
+	   transform: scaleY(0);
+	   max-height: 0;
+	   padding: 0rem 1rem 0rem 2rem;
+	   transition: max-height .1s ease, opacity .1s ease, transform .1s ease, padding .1s ease;
+	   transition-delay: unset;	
+	   
+	   }
+   }
+   
+   .navigation__list {
+	   margin-bottom: 6rem;
+   }
+   
+   .navigation__list:hover {
+	   .sidebarApp-item[data-key="drafts"],
+	   .sidebarApp-item[data-key="sent"],
+	   .sidebarApp-item[data-key="trash"],
+	   .sidebarApp-item[data-key="spam"],
+	   .sidebarApp-item[data-key="allmail"] {
+   
+		   .navigation__link {
+		   opacity: 1;
+		   transform: scaleY(1);
+		   padding: 1.1rem 1rem 1.1rem 2rem;
+		   max-height: 5rem;
+		   transition: max-height .3s ease, opacity .3s ease, transform .3s ease, padding .3s ease;
+		   transition-delay: .7s;		
+		   }
+	   }	
+   }
+   
+   // Move settings to bottom
+   .sidebarApp-menu {
+	   order: 10;
+   }
+   
+   .fill-global-light {
+	   fill: var(--fillcolor-icons, #878c95);
+   }
+   
+   
