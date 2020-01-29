@@ -15,28 +15,53 @@
 		   background: var(--primary-button-bg-hover, #D24360);
 		}
 	}
+
+	ul {
+		margin: 0;
+	}
    
 	// Icons
 	.fill-global-light {
-		fill: var(--sidebar-icon-color, #878c95);
+		fill: var(--fillcolor-icons, #878c95);
 	}
 	
-	// Margin between navigation & folders / tags
-	.navigation__list {
-		margin-bottom: 6rem;
-	}
 	
+
 	// Move settings to bottom
 	.sidebarApp-menu {
-		order: 10;
+		order: 1;
+	}
+
+	// Margin between navigation & folders / tags
+	//.navigation__list {
+		//margin-bottom: 6rem;
+	//}
+		
+	.sidebarLabels-container {
+		padding-top: 2rem;
 	}
 
 	// Hover & drag n drop
    .navigation__link:hover, .navigation__link.ptdnd-drag-hover {
 		background: var(--sidebar-bg-hover, #e7e5e4);
 	}
-  
 
+	// Version
+	small {
+		order: 2;
+		opacity: 1;
+
+		a {
+			color: var(--aside-icon-color, #6B3ABB);
+			opacity: .5;
+
+			&:hover {
+				color: var(--aside-icon-color, #6B3ABB);
+				text-decoration: underline;
+				opacity: 1;
+			}
+		}
+	}
 
 }
      

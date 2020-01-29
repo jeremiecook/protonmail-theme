@@ -4,11 +4,11 @@
   "description": "Protonmail Theme 4.0 - 1 feb 2020",
   "main": "package.json",
   "scripts": {
-    "build-task:scss-compile": "node-sass-chokidar src/scss/ -o dist/css",
-    "build-task:autoprefixer": "postcss dist/css/*.css --use autoprefixer -d dist/css",
+    "build-task:scss-compile": "node-sass-chokidar src/scss/ -o dist/css --output-style compressed",
+    "build-task:autoprefixer": "postcss dist/css/*.css --use autoprefixer -d dist/css --no-map",
     "sass:build": "npm-run-all -p build-task:*",
     "sass:watch": "chokidar 'src/scss/**/*.scss' -c 'npm run sass:build'",
-    "dev": "npm-run-all -p sass:*"
+    "watch": "npm-run-all -p sass:*"
   },
   "repository": {
     "type": "git",

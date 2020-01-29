@@ -2,16 +2,16 @@
  * Header
  */
 
+ // Slightly smaller logo
  .logo {transform: scale(0.75);}
 
 
-
  .header {
-	//background: var(--header-color, #654080);
-	background: linear-gradient(125deg, #6B3ABB, #C559A3, #F7B9A4);
-	//background: linear-gradient(125deg, #6B3ABB, #DD619C, #FFAEB4);
+	background: linear-gradient(125deg, var(--header-bg-1, #6B3ABB), var(--header-bg-2, #C559A3), var(--header-bg-3,#F7B9A4));
 	border-bottom: 1px solid #FDFDFD;
-	height: 7rem;
+	height: 7rem; // Slightly thiner header
+
+
 
 	.searchbox-search-button > .searchbox-search-button-icon {
 		fill: #FFF;
@@ -25,18 +25,38 @@
 		color: rgba(255,255,255,.7);
 	}
 
+	// Hover
+	.topnav-link:active, 
+	.topnav-link:focus, 
+	.topnav-link:hover,
+	.topnav-link[aria-current="true"] {
+		> .topnav-icon {
+			fill: #FFF;
+		}
+	}
+
 
 	.topnav-link[aria-current="true"] {
 		color: #FFF;
+		font-weight: 500;
 	}
 
+	.topnav-link > svg {
+		fill:rgba(255,255,255,.5);
+	}
 
 	.topnav-link[aria-current="true"] > .topnav-icon {
-		color:rgba(255,255,255,.7);
+		fill:rgba(255,255,255,.8);
 	}
 
+
+	// Account link
 	.navigationUser-button {
-		color: #792c64;
+		color: #FFF;
+	}
+
+	.dropDown-logout-displayName {
+
 	}
 
 	.dropDown-logout-email {
@@ -44,6 +64,6 @@
 	}
 
 	.dropDown-logout-initials {
-		border-color: #792c64;
+		border-color: #FFF;
 	}
 }

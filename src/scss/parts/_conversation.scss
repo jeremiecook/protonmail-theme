@@ -1,18 +1,28 @@
 /**
- * Conversation
+ * Sidebar
  */
 
+.elementList-container-row,
 .conversation-list-rows {
-	box-shadow: 3px -1px 2px -2px #bfbfbf inset;
+	box-shadow: 2px 0px 2px -2px #7b7979 inset;
 }
 
 .view-column-detail {
-	box-shadow: 3px -1px 2px -2px #bfbfbf inset;
+	box-shadow: 2px 0px 2px -2px #7b7979 inset;
 }
 
 
+.conversation:not(.read) .senders, .conversation:not(.read) .subject-num-message, .conversation:not(.read) .subject-text, .conversation:not(.read) .time {
+	font-weight: 500;
+}
+
 .conversation {
-	box-shadow: 3px -1px 2px -2px #bfbfbf inset;
+	box-shadow: 2px 0px 2px -2px #7b7979 inset;
+
+	// Unread conversation
+	&:not(.active):not(.read) {
+		background: #FFF;
+	}
 
 
 	// Icon
@@ -20,16 +30,22 @@
 		font-weight: 200;
 	}
 
+	.folderConversations-container svg {
+		fill: var(--conversation-icon-color, var(--header-bg-1, #6B3ABB));
+	}
+
 	// Sender
 	.senders {
 		color: #000;
 		font-weight: 400;
+		font-size: 1.2rem;
 	}
 
 	// Subject
 	.flex-item-fluid.flex.mauto {
 		color: #444;
 		font-weight: 200;
+		font-size: 1.2rem;
 	}
 
 	// Badges
@@ -39,7 +55,7 @@
 
 	// Time
 	time {
-		color: #e14179;
+		color: var(--conversation-icon-color, #e14179);
 		font-size: 1.2rem;
 		font-weight: 200;
 		color: #777;
@@ -62,6 +78,18 @@
 	.singleStar {
 		opacity: 0;
 		transition: all .2s ease;
+	}
+
+	// Nombre de messages
+	.subject-num-message.mr0-25.flex-item-noshrink.ng-binding.ng-scope {
+		order: 10;
+		margin-left: .5rem;
+		font-weight: 400;
+	}
+
+	// Attachment
+	.mtauto.mbauto.conversation-icon-attachment.ml0-5.icon-16p.fill-global-grey{
+		fill: #dc85a3;
 	}
 
 	&:hover {
