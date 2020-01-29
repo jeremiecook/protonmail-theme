@@ -1,0 +1,16 @@
+/**
+ * Layout
+ */
+
+body {
+	//font-family: var(--default-font, 'Muli'), sans-serif;
+	letter-spacing: .2px;
+	color: var(--body-color, #262a33);
+}
+
+ // Going full width
+ .main { margin-right: 0; }
+
+ .content {
+	background-image: linear-gradient(to right bottom,var(--main-bg-color,#262a33),var(--secondary-bg-color,#3c414e));
+ }

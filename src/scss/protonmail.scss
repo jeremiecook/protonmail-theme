@@ -1,28 +1,15 @@
-
-// Note : To improve performances and prevent a Google request, you can install
-// Raleway font on your computer https://fonts.google.com/specimen/Raleway or
-// https://www.fontsquirrel.com/fonts/raleway
-// and delete this line
-//@import url('https://fonts.googleapis.com/css?family=Source Sans Pro:500,600');
-//
-// Fonts
-//
-
-
 //
 // Options
 //
 $hide-message-size: true;
 $hide-navigation: drafts sent trash spam allmail; // Choose in: drafts starred archive sent trash spam allmail
 
-
 //
 // Colors
 //
-
 :root {
 	// Header
-	--header-bg-1: #6B3ABB;
+	--header-bg-1: #5868CC;
 	--header-bg-2: #C559A3;
 	--header-bg-3: #F7B9A4;
 	--bgcolor-searchbox-field: rgba(0, 0, 0, 0.2);
@@ -61,23 +48,12 @@ $hide-navigation: drafts sent trash spam allmail; // Choose in: drafts starred a
 }
 
 
-body {
-	//font-family: var(--default-font, 'Muli'), sans-serif;
-	letter-spacing: .2px;
-	color: var(--body-color, #262a33);
-}
-
- // Going full width
- .main { margin-right: 0; }
-
- .content {
-	background-image: linear-gradient(to right bottom,var(--main-bg-color,#262a33),var(--secondary-bg-color,#3c414e));
- }
 
 //
 // UI Parts
 //
 
+@import 'parts/layout';
 @import 'parts/aside';
 @import 'parts/header';
 @import 'parts/sidebar';
