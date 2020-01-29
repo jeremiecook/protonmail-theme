@@ -6,8 +6,6 @@ Here's your new favorite theme for ProtonMail mail application !
 
 ![Alt text](/images/screenshot.png?raw=true "ProtonMail Theme")
 
-More than a simple recolor, I made, IMHO, some slightly UX improvements.
-
 Out of the box : 
 * New light color theme
 * Cleaner interface with some UX improvements
@@ -19,7 +17,7 @@ It worth mentioning that Protonmail made this new version so much easier to them
 
 ## Auto-collapse menu
 
-![Alt text](/images/auto-collapse.png?raw=true "Auto-collapse")
+![Alt text](/images/auto-collapse.gif?raw=true "Auto-collapse")
 
 
 
