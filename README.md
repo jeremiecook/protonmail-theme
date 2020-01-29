@@ -10,15 +10,13 @@ Out of the box :
 * New light color theme
 * Cleaner interface with some UX improvements
 
+![Alt text](/images/auto-collapse.gif?raw=true "Auto-collapse")
+
+
 For advanded users :
 * Options to tweak colors and navigation
 
 It worth mentioning that Protonmail made this new version so much easier to theme and tweak. Many thanks to the team for these great improvements !
-
-## Auto-collapse menu
-
-![Alt text](/images/auto-collapse.gif?raw=true "Auto-collapse")
-
 
 
 
