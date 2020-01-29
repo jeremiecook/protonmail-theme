@@ -4,12 +4,22 @@
 // https://www.fontsquirrel.com/fonts/raleway
 // and delete this line
 //@import url('https://fonts.googleapis.com/css?family=Source Sans Pro:500,600');
-
-
 //
 // Fonts
 //
 
+
+//
+// Options
+//
+$hide-message-size: true;
+$hide-navigation: drafts sent trash spam allmail; // Choose in: drafts starred archive sent trash spam allmail
+
+.sidebarApp-item[data-key="drafts"],
+.sidebarApp-item[data-key="sent"],
+.sidebarApp-item[data-key="trash"],
+.sidebarApp-item[data-key="spam"],
+.sidebarApp-item[data-key="allmail"],
 
 
 //
@@ -17,35 +27,61 @@
 //
 
 :root {
-	--header-color: #654080;
-	--aside-color: #262a33;
+	// Header
+	--header-bg-1: #6B3ABB;
+	--header-bg-2: #C559A3;
+	--header-bg-3: #F7B9A4;
+
+	// Aside
+	--aside-bg-color: #262a33;
+	--aside-bg-shadow: #000;
+	--aside-icon-color: #6B3ABB;
+	--aside-icon-color-active: #bf57a5;
+
+	// Sidebar & Toolbar
 	--main-bg-color: #F2F0EE;
 	--secondary-bg-color: #FAF9F9;
-	--bgcolor-item-column-list: #F7F6F6;
+	--sidebar-bg-hover: #e7e5e4;
+	--sidebar-icon-color: #878c95;
+
+	//--primary-button-bg-color: #f04882;
+	--primary-button-bg-color: #DB526E;
+	--primary-button-bg-hover: #D24360;
+
+
+
 	--body-fontsize: 1.3rem;
-	--default-font: Muli;
+
+	--bgcolor-item-column-list: #F7F6F6;
+
 	--color-nav-link: #262a33;
 	--bgcolor-toolbar: #F4F2F2;
 	--bordercolor-input: #EBEAEA;
 	--color-nav-active: #657ee4;
 	--fillcolor-icons: #878c95;
+
+	--conversation-bg-read: #000;
+	--conversation-bg-unread: #000;
+	--conversation-bg-active: #000;
 }
 
 
 body {
 	//font-family: var(--default-font, 'Muli'), sans-serif;
+	letter-spacing: .2px;
 }
 
-
+ // Going full width
+ .main { margin-right: 0; }
 
 
 //
 // UI Parts
 //
 
-@import 'parts/layout';
+@import 'parts/aside';
 @import 'parts/header';
 @import 'parts/sidebar';
 @import 'parts/toolbar';
-//@import 'parts/message';
 @import 'parts/conversation';
+//@import 'parts/message';
