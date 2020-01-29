@@ -16,7 +16,7 @@ Out of the box :
 For advanded users :
 * Options to tweak colors and navigation
 
-It worth mentioning that Protonmail made this new version so much easier to theme and tweak. Many thanks to the team for these great improvements !
+It is worth mentioning that Protonmail made this new version so much easier to theme and tweak. Many thanks to the team for these great improvements !
 
 
 
