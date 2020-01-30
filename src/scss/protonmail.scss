@@ -16,7 +16,6 @@ $hide-navigation: drafts sent trash spam allmail; // Choose in: drafts starred a
 
 	// Aside
 	--aside-bg-color: #262a33;
-
 	--aside-icon-color: #6B3ABB;
 	--aside-icon-color-active: #bf57a5;
 
@@ -26,8 +25,9 @@ $hide-navigation: drafts sent trash spam allmail; // Choose in: drafts starred a
 	--sidebar-bg-hover: #e7e5e4;
 	--fillcolor-icons: #878c95;
 	--color-nav-link: #262a33;
+	--color-nav-active: #657ee4;
 
-	//--primary-button-bg-color: #f04882;
+	// Compose button
 	--primary-button-bg-color: #DB526E;
 	--primary-button-bg-hover: #D24360;
 
@@ -37,16 +37,13 @@ $hide-navigation: drafts sent trash spam allmail; // Choose in: drafts starred a
 	
 	// Conversation
 	--conversation-icon-color: #e14179;
+	--conversation-bg-unread: #FFF;
+	--conversation-bg-read: #F7F6F6;
+	--conversation-bg-active: #dadef3;
+	--bordercolor-input: #EBEAEA; // Initials
+	--message-font-size: 1.2rem;
 
-	--bgcolor-item-column-list: #F7F6F6;
-	--bordercolor-input: #EBEAEA;
-	--color-nav-active: #657ee4;
-	
-	--conversation-bg-read: #000;
-	--conversation-bg-unread: #000;
-	--conversation-bg-active: #000;
 }
-
 
 
 //

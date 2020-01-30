@@ -1,11 +1,13 @@
 /**
- * Sidebar
+ * Conversation list
  */
 
+ // Sidebar shadow
 .items-column-list,
 .conversation-list-rows,
 .elementList-container-row,
-.view-column-detail {
+.view-column-detail,
+.conversation {
 	box-shadow: 2px 0px 2px -2px #7b7979 inset;
 }
 
@@ -18,13 +20,17 @@
 }
 
 .conversation {
-	box-shadow: 2px 0px 2px -2px #7b7979 inset;
+
+	background: var(--conversation-bg-read,#F7F6F6);
 
 	// Unread conversation
 	&:not(.active):not(.read) {
-		background: #FFF;
+		background: var(--conversation-bg-unread,#FFF);
 	}
 
+	&.active {
+		background: var(--conversation-bg-active,#dadef3);
+	}
 
 	// Icon
 	.item-icon {
@@ -39,14 +45,14 @@
 	.senders {
 		color: #000;
 		font-weight: 400;
-		font-size: 1.2rem;
+		font-size: var(--message-font-size, 1.2rem);
 	}
 
 	// Subject
 	.flex-item-fluid.flex.mauto {
 		color: #444;
 		font-weight: 200;
-		font-size: 1.2rem;
+		font-size: var(--message-font-size, 1.2rem);
 	}
 
 	// Badges
@@ -57,7 +63,7 @@
 	// Time
 	time {
 		color: var(--conversation-icon-color, #e14179);
-		font-size: 1.2rem;
+		font-size: var(--message-font-size, 1.2rem);
 		font-weight: 200;
 		color: #777;
 		//opacity: .8;
@@ -94,7 +100,7 @@
 
 	// Attachment
 	.mtauto.mbauto.conversation-icon-attachment.ml0-5.icon-16p.fill-global-grey{
-		fill: #dc85a3;
+		fill: var(--attachment-icon-color, #dc85a3);
 	}
 
 	&:hover {
