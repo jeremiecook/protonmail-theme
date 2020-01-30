@@ -2,17 +2,18 @@
  * Sidebar
  */
 
+.items-column-list,
+.conversation-list-rows,
 .elementList-container-row,
-.conversation-list-rows {
-	box-shadow: 2px 0px 2px -2px #7b7979 inset;
-}
-
 .view-column-detail {
 	box-shadow: 2px 0px 2px -2px #7b7979 inset;
 }
 
 
-.conversation:not(.read) .senders, .conversation:not(.read) .subject-num-message, .conversation:not(.read) .subject-text, .conversation:not(.read) .time {
+.conversation:not(.read) .senders, 
+.conversation:not(.read) .subject-num-message, 
+.conversation:not(.read) .subject-text, 
+.conversation:not(.read) .time {
 	font-weight: 500;
 }
 
@@ -67,18 +68,22 @@
 		//}
 	}
 
+
 	// Size
-	.mtauto.mbauto.mr1.ml1.ng-binding {
-		opacity: 0;
-		transition: all .2s ease;
-		font-size: 1.2rem;
+	@if $hide-message-size {	
+		.mtauto.mbauto.mr1.ml1.ng-binding {
+			opacity: 0;
+			transition: all .2s ease;
+			font-size: 1.2rem;
+		}
 	}
 
-	// Star
+	// Star	
 	.singleStar {
 		opacity: 0;
 		transition: all .2s ease;
 	}
+
 
 	// Nombre de messages
 	.subject-num-message.mr0-25.flex-item-noshrink.ng-binding.ng-scope {

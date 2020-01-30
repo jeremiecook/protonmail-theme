@@ -8,6 +8,7 @@ Here's your new favorite theme for ProtonMail mail application !
 
 Out of the box : 
 * New light color theme
+* Better access to folders and badgs
 * Cleaner interface with some UX improvements
 
 ![Alt text](/images/auto-collapse.gif?raw=true "Auto-collapse")
@@ -25,7 +26,7 @@ It is worth mentioning that Protonmail made this new version so much easier to t
 1 - Copy the CSS from /dist/css/prontmail.css
 https://raw.githubusercontent.com/jeremiecook/protonmail-theme/master/dist/css/protonmail.css
 
-2 - Paste it in ProntMail into Settings > Appearance > Custom Theme > Customize field.
+2 - Paste it in ProtonMail into Settings > Appearance > Custom Theme > Customize field.
 
 You're done !
 
