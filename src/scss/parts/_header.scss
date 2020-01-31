@@ -7,63 +7,82 @@
 
 
  .header {
+
+	// Background
 	background: linear-gradient(125deg, var(--header-bg-1, #6B3ABB), var(--header-bg-2, #C559A3), var(--header-bg-3,#F7B9A4));
-	border-bottom: 1px solid #FDFDFD;
+	border-bottom: 1px solid var(--header-border, #FDFDFD);
 	height: 7rem; // Slightly thiner header
 
 
+	// Search field
 
+	// Magnifying glass icon
 	.searchbox-search-button > .searchbox-search-button-icon {
-		fill: #FFF;
+		fill: var(--header-icon-color,#FFF);;
 	}
 
+	// Background
 	.searchbox-field[type="search"] {
 		background-color: var(--bgcolor-searchbox-field,rgba(0,0,0,.3));
 	}
 
+
+
+	// Header link
 	.topnav-link {
-		color: rgba(255,255,255,.7);
+		color: var(--header-link-color,#FFF);;
+		opacity: .7;
 	}
 
-	// Hover
-	.topnav-link:active, 
-	.topnav-link:focus, 
-	.topnav-link:hover,
-	.topnav-link[aria-current="true"] {
-		> .topnav-icon {
-			fill: #FFF;
+		// active
+		.topnav-link[aria-current="true"] {
+			color: var(--header-link-color,#FFF);;
+			font-weight: 500;
+			opacity: 1;
 		}
-	}
 
 
-	.topnav-link[aria-current="true"] {
-		color: #FFF;
-		font-weight: 500;
-	}
 
+
+	// Header Icon
 	.topnav-link > svg {
-		fill:rgba(255,255,255,.5);
+		fill: var(--header-icon-color,#FFF);
+		opacity: .5;
 	}
+
+		// Hover
+		.topnav-link:active, 
+		.topnav-link:focus, 
+		.topnav-link:hover,
+		.topnav-link[aria-current="true"] {
+			> .topnav-icon {
+				fill: var(--header-icon-color,#FFF);
+				opacity: .8;
+			}
+		}
+
 
 	.topnav-link[aria-current="true"] > .topnav-icon {
-		fill:rgba(255,255,255,.8);
+		fill:var(--header-icon-color,#FFF);
+		opacity: .8;
 	}
 
 
 	// Account link
 	.navigationUser-button {
-		color: #FFF;
+		color: var(--header-link-color,#FFF);
 	}
 
-	.dropDown-logout-displayName {
-
+	// Initials border
+	.dropDown-logout-initials {
+		border-color: var(--header-icon-color,#FFF);
 	}
 
+	// Email
 	.dropDown-logout-email {
 		opacity: .6;
 	}
 
-	.dropDown-logout-initials {
-		border-color: #FFF;
-	}
+
+
 }

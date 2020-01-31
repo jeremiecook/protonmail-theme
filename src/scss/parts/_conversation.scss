@@ -11,6 +11,10 @@
 	box-shadow: 2px 0px 2px -2px #7b7979 inset;
 }
 
+.items-column-list {
+	border-right: none;
+}
+
 
 .conversation:not(.read) .senders, 
 .conversation:not(.read) .subject-num-message, 
