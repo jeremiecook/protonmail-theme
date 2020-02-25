@@ -34,3 +34,14 @@
 .pm-group-buttons > .pm-group-button:last-child {
 	border-radius: 0;
 }
+
+
+// Calendar
+
+.pm-button.toolbar-button.is-active, .pm-button.toolbar-button:active, .pm-button.toolbar-button:not(div):active, .pm-button.toolbar-button [aria-expanded="true"], .toolbar-button.is-active, .toolbar-button.is-active.pm-button--info, .toolbar-button.is-active.pm-button--redborder, .toolbar-button.pm-button--info:active, .toolbar-button.pm-button--info:not(div):active, .toolbar-button.pm-button--info [aria-expanded="true"], .toolbar-button.pm-button--redborder:active, .toolbar-button.pm-button--redborder:not(div):active, .toolbar-button.pm-button--redborder [aria-expanded="true"], .toolbar-button:active, .toolbar-button:not(div):active, .toolbar-button [aria-expanded="true"] {
+	background: #dfdfdf;
+}
+
+.minicalendar--onDarkBackground .minicalendar-day {
+	color: #000;
+}
