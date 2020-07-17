@@ -10,7 +10,7 @@
 		background: var(--primary-button-bg-color, #DB526E);
 		margin-top: 2rem;
 		border: none;
-   
+
 		&:hover {
 		   background: var(--primary-button-bg-hover, #D24360);
 		}
@@ -19,12 +19,12 @@
 	ul {
 		margin: 0;
 	}
-   
+
 	// Icons
 	.fill-global-light {
 		fill: var(--fillcolor-icons, #878c95);
 	}
-	
+
 
 	// Move settings to bottom
 	.sidebarApp-menu {
@@ -35,11 +35,11 @@
 	//.navigation__list {
 		//margin-bottom: 6rem;
 	//}
-		
+
 
 	.navigation__link,
 	.sidebarLabels-container {
-		padding-top: 2rem;
+		padding-top: 1.3rem;
 	}
 
 	// Hover & drag n drop
@@ -65,7 +65,7 @@
 	}
 
 }
-     
+
 
 // Hiding/showing navigation items
 // Note: Need Sass optimisation
@@ -79,9 +79,9 @@
 			max-height: 0;
 			padding: 0rem 1rem 0rem 2rem;
 			transition: max-height .1s ease, opacity .1s ease, transform .1s ease, padding .1s ease;
-			transition-delay: unset;	
+			transition-delay: unset;
 		}
-	}		
+	}
 }
 
 .navigation__list:hover {
@@ -94,9 +94,9 @@
 				padding: 1.1rem 1rem 1.1rem 2rem;
 				max-height: 5rem;
 				transition: max-height .3s ease, opacity .3s ease, transform .3s ease, padding .3s ease;
-				transition-delay: .7s;		
+				transition-delay: .7s;
 			}
-		}	
+		}
 	}
 }
 
