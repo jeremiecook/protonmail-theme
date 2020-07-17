@@ -24,6 +24,7 @@
     // App Icon
     .appsDropdown-button .appsDropdown-button-icon {
         fill: white;
+        opacity: .8;
     }
 
 	// Background
@@ -37,6 +38,10 @@
 	.topnav-link {
 		color: var(--header-link-color,#FFF);;
 		opacity: .7;
+
+        span {
+            border-bottom: 1px solid rgba(255,255,255,.3);
+        }
 	}
 
 		// active
@@ -67,6 +72,10 @@
 		}
 
 
+    .topnav-link[aria-current="true"] {
+        display: none;
+    }
+
 	.topnav-link[aria-current="true"] > .topnav-icon {
 		fill:var(--header-icon-color,#FFF);
 		opacity: .8;
@@ -78,14 +87,17 @@
 		color: var(--header-link-color,#FFF);
 	}
 
+
+
 	// Initials border
 	.dropDown-logout-initials {
 		border-color: var(--header-icon-color,#FFF);
 	}
 
 	// Email
+    .dropDown-logout-displayName,
 	.dropDown-logout-email {
-		opacity: .6;
+		display: none;
 	}
 
 
