@@ -14,7 +14,7 @@ $hide-navigation: drafts sent trash spam allmail; // Choose in: drafts starred a
 	--header-bg-3: #F7B9A4;
 	--bgcolor-searchbox-field: rgba(0, 0, 0, 0.2);
 	--header-icon-color: #FFF;
-	--header-link-color: #FFF;	
+	--header-link-color: #FFF;
 
 	// Aside
 	--aside-bg-color: #262a33;
@@ -36,7 +36,7 @@ $hide-navigation: drafts sent trash spam allmail; // Choose in: drafts starred a
 	// Default font
 	--body-fontsize: 1.3rem;
 	--body-color: #262a33;
-	
+
 	// Conversation
 	--conversation-icon-color: #e14179;
 	--conversation-bg-unread: #FFF;
@@ -45,6 +45,10 @@ $hide-navigation: drafts sent trash spam allmail; // Choose in: drafts starred a
 	--bordercolor-input: #EBEAEA; // Initials
 	--message-font-size: 1.2rem;
 
+}
+
+body {
+    font-family: 'Source Sans Pro', -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif
 }
 
 
