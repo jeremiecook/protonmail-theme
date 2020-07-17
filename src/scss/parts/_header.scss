@@ -21,6 +21,11 @@
 		fill: var(--header-icon-color,#FFF);;
 	}
 
+    // App Icon
+    .appsDropdown-button .appsDropdown-button-icon {
+        fill: white;
+    }
+
 	// Background
 	.searchbox-field[type="search"] {
 		background-color: var(--bgcolor-searchbox-field,rgba(0,0,0,.3));
@@ -51,8 +56,8 @@
 	}
 
 		// Hover
-		.topnav-link:active, 
-		.topnav-link:focus, 
+		.topnav-link:active,
+		.topnav-link:focus,
 		.topnav-link:hover,
 		.topnav-link[aria-current="true"] {
 			> .topnav-icon {
