@@ -11,10 +11,10 @@
 }
 
 // Hover & active
-.pm-button.toolbar-button:hover, .toolbar-button.pm-button--info:hover, 
-.toolbar-button.pm-button--redborder:hover, .toolbar-button:hover, 
+.pm-button.toolbar-button:hover, .toolbar-button.pm-button--info:hover,
+.toolbar-button.pm-button--redborder:hover, .toolbar-button:hover,
 .toolbar-button:active, .toolbar-button:not(div):active {
-	background: var(--sidebar-bg-hover, #e7e5e4); 
+	background: var(--sidebar-bg-hover, #e7e5e4);
 }
 
 // Checkbox
@@ -22,6 +22,8 @@
 	background-color: #FFF;
 	border-color: var(--fillcolor-icons, #878c95);
 }
+
+
 
 // Separators
 .toolbar-separator {

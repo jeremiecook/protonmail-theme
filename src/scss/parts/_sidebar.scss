@@ -16,14 +16,19 @@
 		}
 	}
 
-	ul {
-		margin: 0;
-	}
+	//ul.navigation__list {
+	//	margin: 1.5em 0 0;
+	//}
 
 	// Icons
 	.fill-global-light {
 		fill: var(--fillcolor-icons, #878c95);
 	}
+
+    [data-name="reload"] {
+        fill: var(--color-nav-active, #000);
+    }
+
 
 
 	// Move settings to bottom
@@ -39,8 +44,10 @@
 
 	.navigation__link,
 	.sidebarLabels-container {
-		padding-top: 1.3rem;
+		//padding-top: 1.3rem;
 	}
+
+
 
 	// Hover & drag n drop
    .navigation__link:hover, .navigation__link.ptdnd-drag-hover {
@@ -50,7 +57,9 @@
 	// Version
 	small {
 		order: 2;
-		opacity: 1;
+		opacity: 0;
+        transition: opacity .3s ease;
+        transition-delay: .7s;
 
 		a {
 			color: var(--aside-icon-color, #6B3ABB);
@@ -63,6 +72,14 @@
 			}
 		}
 	}
+
+    &:hover {
+        small {
+            opacity: 1;
+        }
+    }
+
+
 
 }
 
