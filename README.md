@@ -72,6 +72,6 @@ npm run watch
 
 
 ## News & updates
-
+* Jul 17 2020 - Improvements & bugfixes
 * Feb 1st 2020 - Protonmail Theme 4 is here !
 * Feb 22 2017 - Theme updated for Protonmail 3.7.1
