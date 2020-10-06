@@ -45,10 +45,17 @@ $hide-navigation: Drafts Sent Trash Spam "All mail"; // Choose in: drafts starre
 	--bordercolor-input: #EBEAEA; // Initials
 	--message-font-size: 1.2rem;
 
+    // List
+    --bgcolor-item-column-list: #F7F6F5;
+
 }
 
 body {
     font-family: 'Source Sans Pro', -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif
+}
+
+.bold, .strong, b, strong {
+    font-weight: 600;
 }
 
 
