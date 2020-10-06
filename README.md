@@ -1,6 +1,7 @@
 # ProtonMail Theme
 
-**New** : Theme updated for Protonmail 4.0.0 **Beta** - 1 feb 2020
+**New** : Theme updated for Protonmail 4.1.1 - 6 oct 2020
+
 
 Here's your new favorite theme for ProtonMail mail application !
 
@@ -23,10 +24,13 @@ It is worth mentioning that Protonmail made this new version so much easier to t
 
 ## Easy installation !
 
+Since Protonmail 4.1.1, you need to use Stylus extension to customize your Inbox (Source [Reddit](https://www.reddit.com/r/ProtonMail/comments/j3z4d6/use_stylus_as_an_alternative_to_custom_css_in_beta/)). You can download it for [Firefox](https://addons.mozilla.org/fr/firefox/addon/styl-us/) or [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) (But you should really use Firefox)
+
+
 1 - Copy the CSS from /dist/css/prontmail.css
 https://raw.githubusercontent.com/jeremiecook/protonmail-theme/master/dist/css/protonmail.css
 
-2 - Paste it in ProtonMail into Settings > Appearance > Custom Theme > Customize field.
+2 - Paste it in Stylus
 
 You're done !
 
