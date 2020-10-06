@@ -87,10 +87,10 @@
 // Hiding/showing navigation items
 // Note: Need Sass optimisation
 
-@each $navigation-item in $hide-navigation {
+.sidebar {
 
-	.sidebarApp-item[data-key="#{$navigation-item}"] {
-		.navigation__link:not([aria-current="page"]) {
+    @each $navigation-item in $hide-navigation {
+		.navigation__link[title="#{$navigation-item}"]:not([aria-current="page"]) {
 			opacity: 0;
 			transform: scaleY(0);
 			max-height: 0;
@@ -98,23 +98,19 @@
 			transition: max-height .1s ease, opacity .1s ease, transform .1s ease, padding .1s ease;
 			transition-delay: unset;
 		}
-	}
-}
+    }
 
-.navigation__list:hover {
-	@each $navigation-item in $hide-navigation {
-
-		.sidebarApp-item[data-key="#{$navigation-item}"] {
-			.navigation__link {
-				opacity: 1;
-				transform: scaleY(1);
-				padding: 1.1rem 1rem 1.1rem 2rem;
-				max-height: 5rem;
-				transition: max-height .3s ease, opacity .3s ease, transform .3s ease, padding .3s ease;
-				transition-delay: .7s;
-			}
+    .navigation__list:hover {
+		.navigation__link {
+			opacity: 1;
+			transform: scaleY(1);
+			padding: 1.1rem 1rem 1.1rem 2rem;
+			max-height: 5rem;
+			transition: max-height .3s ease, opacity .3s ease, transform .3s ease, padding .3s ease;
+			transition-delay: .7s;
 		}
-	}
+    }
+
 }
 
 
