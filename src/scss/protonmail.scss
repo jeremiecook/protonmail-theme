@@ -2,7 +2,7 @@
 // Options
 //
 $hide-message-size: true;
-$hide-navigation: Drafts Sent Trash Spam "All mail"; // Choose in: drafts starred archive sent trash spam allmail
+$hide-navigation: drafts sent trash spam archive allmail; // Choose in: drafts starred archive sent trash spam allmail
 
 //
 // Colors
@@ -51,7 +51,7 @@ $hide-navigation: Drafts Sent Trash Spam "All mail"; // Choose in: drafts starre
 }
 
 body {
-    font-family: 'Source Sans Pro', -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif
+    font-family: 'Mukta', -apple-system,Ubuntu,Helvetica Neue,sans-serif
 }
 
 .bold, .strong, b, strong {
@@ -64,7 +64,6 @@ body {
 //
 
 @import 'parts/layout';
-@import 'parts/aside';
 @import 'parts/header';
 @import 'parts/sidebar';
 @import 'parts/toolbar';

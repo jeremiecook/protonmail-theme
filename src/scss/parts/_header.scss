@@ -88,7 +88,14 @@
 	}
 
 
+	.apps-dropdown-button .apps-dropdown-button-icon {
+		color: #FFF;
+	}
 
+	.dropdown-logout-displayName,
+	.dropdown-logout-email {
+		color: #FFF;
+	}
 	// Initials border
 	.dropDown-logout-initials {
 		border-color: var(--header-icon-color,#FFF);

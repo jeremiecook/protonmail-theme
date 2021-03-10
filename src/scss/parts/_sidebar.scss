@@ -6,7 +6,7 @@
 .sidebar {
 
 	// Compose button
-	.pm-button--large {
+	.button--primary {
 		background: var(--primary-button-bg-color, #DB526E);
 		margin-top: 2rem;
 		border: none;
@@ -42,7 +42,7 @@
 	//}
 
 
-	.navigation__link,
+	.navigation-link,
 	.sidebarLabels-container {
 		//padding-top: 1.3rem;
 	}
@@ -50,7 +50,7 @@
 
 
 	// Hover & drag n drop
-   .navigation__link:hover, .navigation__link.ptdnd-drag-hover {
+   .navigation-link:hover, .navigation-link.ptdnd-drag-hover {
 		background: var(--sidebar-bg-hover, #e7e5e4);
 	}
 
@@ -90,7 +90,7 @@
 .sidebar {
 
     @each $navigation-item in $hide-navigation {
-		.navigation__link[title="#{$navigation-item}"]:not([aria-current="page"]) {
+		.navigation-link[data-test-id="#{$navigation-item}"]:not([aria-current="page"]) {
 			opacity: 0;
 			transform: scaleY(0);
 			max-height: 0;
@@ -100,8 +100,9 @@
 		}
     }
 
-    .navigation__list:hover {
-		.navigation__link {
+    //.navigation__list .navigation__item:nth-child(-n+8):hover {
+    .navigation-list:hover {
+		.navigation-link {
 			opacity: 1;
 			transform: scaleY(1);
 			padding: 1.1rem 1rem 1.1rem 2rem;

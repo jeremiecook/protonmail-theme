@@ -4,7 +4,7 @@
 
 body {
 	//font-family: var(--default-font, 'Muli'), sans-serif;
-	letter-spacing: .2px;
+	letter-spacing: .4px;
 	color: var(--body-color, #262a33);
 }
 
@@ -14,3 +14,12 @@ body {
  .content {
 	background-image: linear-gradient(to right bottom,var(--main-bg-color,#262a33),var(--secondary-bg-color,#3c414e));
  }
+
+
+ .item-senders {
+	font-weight: 500;
+ }
+
+ .item-subject {
+	font-weight: 400;
+}
